@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('../html/head.html/',{ "title":"Home" })
+	{% include 'head.html' %}
+<!-- @@include('../html/head.html/',{ "title":"Home" }) -->
 <body>
 	<div class="vi-wrapper">
 		<div class="vi-wrapper__background">
@@ -12,53 +13,61 @@
 			</div>
 		</div>
 		<!-- Section Header begin -->
-		@@include('../html/header.html',{})
+		<!-- @@include('../html/header.html',{}) -->
+		{% include 'header.html' %}
 	</div>
 	<!-- Header end -->
 	<main>
 		<!-- Section TOP begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-topHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			{% include 'vr-topHP.html' %}
+		</div>
 		<!-- TOP end -->
 		<!-- Section Aboutus begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-aboutusHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-aboutusHP.html' %}
+		</div>
 		<!-- Aboutus end -->
 		<!-- Section Ourservice begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-ourserviceHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-ourserviceHP.html' %}
+		</div>
 		<!-- Ourservice end -->
 		<!-- Section Whychooseus begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-whychooseusHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-whychooseusHP.html' %}
+		</div>
 		<!-- Whychooseus end -->
 		<!-- Section Getstarted begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-getstartedHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-getstartedHP.html' %}
+		</div>
 		<!-- Section Getstarted end -->
 		<!-- Section Testemonial begin -->
-		<!-- <div class="vi-wrappers">
-			@@include('../html/vr-testemonialHP.html',{})
-		</div> -->
+		<div class="vi-wrappers">
+			
+			{% include 'vr-testemonialHP.html' %}
+		</div>
 		<!-- Section Testemonial end -->
 		<!-- Section Ourpricing begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-ourpricingHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+	
+			{% include 'vr-ourpricingHP.html' %}
+		</div>
 		<!-- Section Ourpricing end -->
 		<!-- Section Ourpartner begin -->
-		<!-- <div class="vi-wrapper">
-			@@include('../html/vr-ourpartnersHP.html',{})
-		</div> -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-ourpartnersHP.html' %}
+		</div>
 		<!-- Section Ourpartner end -->
 		<!-- Section Ourarticles begin -->
 		<div class="vi-wrapper">
-			@@include('../html/vr-ourarticlesHP.html',{})
+			{% include 'vr-ourarticlesHP.html'%}
 		</div>
 		<!-- Section Ourarticles end -->
 	</main>

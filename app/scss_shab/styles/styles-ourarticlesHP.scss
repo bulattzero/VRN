@@ -19,14 +19,17 @@
 	}
 	.vi-slogan {
 		&__subtitle {
+			position: relative;
 		}
 		&__tittle {
+			position: relative;
 		}
 	}
 	&__inner {
 		position: relative;
 	}
 	&__item {
+		position: relative;
 	}
 	.vi-overview{
 		display: flex;
@@ -40,8 +43,9 @@
 				display: flex;
 				flex-direction: column;
 				gap: 32px;
+				position: relative;
 				&__name{
-					color: var(--greyscale-white, #FFF);
+					color: #FFF;
 					font-family: Chakra Petch;
 					font-size: 28px;
 					font-style: normal;
@@ -52,14 +56,19 @@
 				}
 				&__item{
 					
+					position: relative;
+					padding-bottom: 32px;
+					border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
 					
 				}
 				&__flex{
 					display: flex;
-					gap: 21px;
-
+					gap: 13px;
+					align-items: center;
 				}
 				&__image {
+					position: relative;
+					margin-right: 7px;
 
 				}
 				&__badge {
@@ -76,15 +85,27 @@
 					border-radius: 16px;
 					background: rgba(255, 255, 255, 0.30);
 					color: var(--white, #FFF);
-					
+					margin-right: auto;
 					font-family: Chakra Petch;
 					font-size: 14px;
 					font-style: normal;
 					font-weight: 500;
-					line-height: 20px; /* 142.857% */
+					line-height: 20px; 
 					
 				}
 				&__description {
+					position: relative;
+					color: #FFF;
+					font-family: Chakra Petch;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+
+				}
+				.vi-next-button{
+					background: rgba(255, 255, 255, 0.06);
+					padding: 13.333px;
 
 				}
 			}

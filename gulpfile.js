@@ -14,7 +14,7 @@ const versionNumber = require ('gulp-version-number');
 const webpHtmlNosvg = require ('gulp-webp-html-nosvg');
 const remToPx = require('gulp-rem-to-px');
 const pictureHtml= require ('gulp-webp-avif-html-nosvg-nogif-lazyload')
-
+const nunjucksRender = require('gulp-nunjucks-render');
 const fileinclude = require('gulp-file-include');
 const plumber = require ('gulp-plumber');
 const notify = require ('gulp-notify')
@@ -323,10 +323,13 @@ function cleanDist(){
 		message: "Error: <%= error.message%>"
 	})
 ))
-	.pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
+	// .pipe(fileinclude({
+    //   prefix: '@@',
+    //   basepath: '@file',
+    // }))
+	.pipe(nunjucksRender({
+		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
+	  }))
 	 .pipe(replace(/@img\//g,'img/')) // заменяет в html @img на img/
 	 .pipe(replace(/@img_html\//g,'img_html/')) // заменяет в html @img на img_html/
 	 .pipe(webpHtmlNosvg())

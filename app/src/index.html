@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<!-- <link rel="preconnect" href="https://vas.omones.ru/">
 	<link rel="preconnect" href="https://vas.omones.ru/" crossorigin>
 	<link rel="dns-prefetch" href="https://vas.omones.ru/">
 	<link rel="preload" href="https://vas.omones.ru/style.css" as="style"> -->
-	<title>Home</title>
+	<title>@@title</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="theme-color" content="#fff" />
@@ -17,20 +17,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="format-detection" content="address=no " />
-	<link href="style.css?_v=20230810201538" type="text/css" rel="stylesheet" />
-	<link media="(min-width:0px) and (max-width:769px)" type="text/css" rel="stylesheet" href="media769.css?_v=20230810201538" />
-	<link media="(min-width:770px) and (max-width:993px)" type="text/css" rel="stylesheet" href="media993.css?_v=20230810201538" />
-	<link media="(min-width:994px) and (max-width:1201px)" type="text/css" rel="stylesheet" href="media1201.css?_v=20230810201538" />
-	<link media="(min-width:1202px) and (max-width:1401px)" type="text/css" rel="stylesheet" href="media1401.css?_v=20230810201538" />
-	<link media="(min-width:1402px)" type="text/css" rel="stylesheet" href="media1402.css?_v=20230810201538" />
-	<script defer src="js/jquery-3.4.1.min.js?_v=20230810201538"></script>
-	<script defer src="js/lazyload.min.js?_v=20230810201538"></script>
-	<script defer src="js/slick.min.js?_v=20230810201538"></script>
-	<script defer src="js/script.js?_v=20230810201538"></script>
+	<link href="style.css?_v=20230812152753" type="text/css" rel="stylesheet" />
+	<link media="(min-width:0px) and (max-width:769px)" type="text/css" rel="stylesheet" href="media769.css?_v=20230812152753" />
+	<link media="(min-width:770px) and (max-width:993px)" type="text/css" rel="stylesheet" href="media993.css?_v=20230812152753" />
+	<link media="(min-width:994px) and (max-width:1201px)" type="text/css" rel="stylesheet" href="media1201.css?_v=20230812152753" />
+	<link media="(min-width:1202px) and (max-width:1401px)" type="text/css" rel="stylesheet" href="media1401.css?_v=20230812152753" />
+	<link media="(min-width:1402px)" type="text/css" rel="stylesheet" href="media1402.css?_v=20230812152753" />
+	<script defer src="js/jquery-3.4.1.min.js?_v=20230812152753"></script>
+	<script defer src="js/lazyload.min.js?_v=20230812152753"></script>
+	<script defer src="js/slick.min.js?_v=20230812152753"></script>
+	<script defer src="js/script.js?_v=20230812152753"></script>
 	
 	
 
 </head>
+<!-- @@include('../html/head.html/',{ "title":"Home" }) -->
 <body>
 	<div class="vi-wrapper">
 		<div class="vi-wrapper__background">
@@ -42,13 +43,15 @@
 			</div>
 		</div>
 		<!-- Section Header begin -->
+		<!-- @@include('../html/header.html',{}) -->
 		<header>
 <div class="vi-headcontainer">
 	<div class="vi-headers">
 		<div class="vi-headers__logo"> 
 			<a href="/"><img class="lazy" data-src="img/svg/Logo.svg" alt="Logo" width="101" height="30"></a>
-		</div>
-			  <div class="vi-menu vi-menu--upper">
+		</div>	
+		
+				<div class="vi-menu vi-menu--upper">
 	<ul class="vi-menu__top">
 		<li class="vi-menu__item vi-menu__item--current">
 			<a href="/"><span>Home</span></a>
@@ -132,6 +135,13 @@
 		</li>
 	</ul>
 </div>
+			  <!-- @@include('templatemenutop.html', {
+			  "optionalClass1": "vi-menu__item--current",
+			  "optionalClass2": "",
+			  "optionalClass3": "",
+			  "optionalClass4": "",
+			  "optionalClass5": "",
+			}) -->
 		
 		<div class="vi-headers__contactbutton">
 			<a href="#"><span>Contact us</span></a>
@@ -149,7 +159,7 @@
 	<!-- Header end -->
 	<main>
 		<!-- Section TOP begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
 			<section class="vi-top">
 	<div class="vi-graphics">
 		<div class="vi-graphics__backgroundimg" data-bg="img/svg/Reshetka.svg" >
@@ -253,10 +263,11 @@
 	</div>
 
 </section>
-		</div> -->
+		</div>
 		<!-- TOP end -->
 		<!-- Section Aboutus begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+			
 			<section class="vi-aboutus">
 	<div class="vi-graphics">
 		<div class="vi-graphics__background" >
@@ -345,10 +356,11 @@
 	
 
 </section>
-		</div> -->
+		</div>
 		<!-- Aboutus end -->
 		<!-- Section Ourservice begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+			
 			<section class="vi-ourservice">
 	<div class="vi-graphics">
 		
@@ -554,10 +566,11 @@
 	</div>
 
 </section>
-		</div> -->
+		</div>
 		<!-- Ourservice end -->
 		<!-- Section Whychooseus begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+			
 			<section class="vi-whychooseus">
 
 
@@ -677,10 +690,11 @@
 	</div>
 	
 </section>
-		</div> -->
+		</div>
 		<!-- Whychooseus end -->
 		<!-- Section Getstarted begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+			
 			<section class="vi-getstarted">
 	<div class="vi-graphics">
 		
@@ -747,10 +761,11 @@
 	</div>
 
 </section>
-		</div> -->
+		</div>
 		<!-- Section Getstarted end -->
 		<!-- Section Testemonial begin -->
-		<!-- <div class="vi-wrappers">
+		<div class="vi-wrappers">
+			
 			<section class="vi-testemonial">
 	<div class="vi-testemonial__inner">
 		<div class="vi-testemonial__item">
@@ -894,10 +909,11 @@
 		</div>
 	</div>
 </section>
-		</div> -->
+		</div>
 		<!-- Section Testemonial end -->
 		<!-- Section Ourpricing begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+	
 			<section class="vi-ourpricing">
 	<div class="vi-graphics">
 	
@@ -1032,10 +1048,11 @@
 	
 
 </section>
-		</div> -->
+		</div>
 		<!-- Section Ourpricing end -->
 		<!-- Section Ourpartner begin -->
-		<!-- <div class="vi-wrapper">
+		<div class="vi-wrapper">
+			
 			<section class="vi-ourpartners">
 	<div class="vi-ourpartners__inner">
 		<div class="vi-ourpartners__item">
@@ -1096,7 +1113,7 @@
 		</div>
 	</div>
 </section>
-		</div> -->
+		</div>
 		<!-- Section Ourpartner end -->
 		<!-- Section Ourarticles begin -->
 		<div class="vi-wrapper">
@@ -1122,13 +1139,13 @@
 
 					<h2>Stay Up-to-Date with Our VR Insights</h2>
 				</div>
-			
+
 
 
 			</div>
 
 		</div>
-		
+
 	</div>
 	<div class="vi-overview">
 		<div class="vi-overview__item">
@@ -1140,70 +1157,260 @@
 					Recent Article
 
 				</div>
+
+
+
 				<div class="vi-recent-box__item">
+					
+					
+					
+					
 					<div class="vi-recent-box__flex">
-						<div class="vi-recent-box__image">
-							<picture><source data-srcset="img/glassess.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="   class="lazy" data-src="img/glassess.jpg" alt="glassess"></picture>
-						</div>
-						<div class="vi-recent-box__badge">
-							<div class="vi-recent-box__tittle">
-								VR Education
-							</div>
-							<div class="vi-recent-box__description">
-								The Future of Education: How VR is Revolutionizing the Classroom
-							</div>
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/glassess.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/glassess.jpg" alt="glassess" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Education
+		</div>
+		<div class="vi-recent-box__description">
+			The Future of Education: How VR is Revolutionizing the Classroom
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
 
-						
-						</div>
-					
+
+
+
+
 				</div>
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/man_in_glassess.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/man_in_glassess.jpg" alt="man_in_glassess" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Architecture 
+		</div>
+		<div class="vi-recent-box__description">
+			Bringing Designs to Life: How VR is Changing Architecture
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/glassess_hand.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/glassess_hand.jpg" alt="glassess_hand" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Entertainment 
+		</div>
+		<div class="vi-recent-box__description">
+			Making Events Memorable: The Power of VR for Corporate and Special Occasions
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/people.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/people.jpg" alt="people" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Event 
+		</div>
+		<div class="vi-recent-box__description">
+			Exploring New Worlds: The Benefits of VR Travel
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/man_in_glass2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/man_in_glass2.jpg" alt="man_in_glass2" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Games 
+		</div>
+		<div class="vi-recent-box__description">
+			Entertainment Goes Virtual: The Rise of VR Gaming
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/teenns.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/teenns.jpg" alt="teenns" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Games 
+		</div>
+		<div class="vi-recent-box__description">
+			Entertainment Goes Virtual: The Rise of VR Gaming
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/lapa.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/lapa.jpg" alt="lapa" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Education 
+		</div>
+		<div class="vi-recent-box__description">
+			The Future of Education: How VR is Revolutionizing the Classroom
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/glasseesin.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/glasseesin.jpg" alt="glasseesin" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Education 
+		</div>
+		<div class="vi-recent-box__description">
+			The Future of Education: How VR is Revolutionizing the Classroom
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				<div class="vi-recent-box__item">
+					
+					
+					
+					
+					<div class="vi-recent-box__flex">
+	<div class="vi-recent-box__image">
+		<picture><source data-srcset="img/teen_drive.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/teen_drive.jpg" alt="teen_drive" width="142" height="91"></picture>
+	</div>
+	<div class="vi-recent-box__badge">
+		<div class="vi-recent-box__tittle">
+			VR Event 
+		</div>
+		<div class="vi-recent-box__description">
+			Exploring New Worlds: The Benefits of VR Travel
+		</div>
+	</div>
+	<div class="vi-next-button">
+		<img class="lazy" data-src="img/svg/next1.svg" alt="next1" width="13.33" height="13.33">
+	</div>
+</div>
+
+
+
+
+				</div>
+
+				
+					
+
+
+				</div>
+				
 
 
 			</div>
-			<div class="vi-recent-box__item">
-				<div class="vi-recent-box__flex">
-					<div class="vi-recent-box__image">
-						<picture><source data-srcset="img/glassess.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="   class="lazy" data-src="img/glassess.jpg" alt="glassess"></picture>
-					</div>
-					<div class="vi-recent-box__badge">
-						<div class="vi-recent-box__tittle">
-							VR Education
-						</div>
-						<div class="vi-recent-box__description">
-							The Future of Education: How VR is Revolutionizing the Classroom
-						</div>
-
-					
-					</div>
-				
-			</div>
-
-
 		</div>
-		<div class="vi-recent-box__item">
-			<div class="vi-recent-box__flex">
-				<div class="vi-recent-box__image">
-					<picture><source data-srcset="img/glassess.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="   class="lazy" data-src="img/glassess.jpg" alt="glassess"></picture>
-				</div>
-				<div class="vi-recent-box__badge">
-					<div class="vi-recent-box__tittle">
-						VR Education
-					</div>
-					<div class="vi-recent-box__description">
-						The Future of Education: How VR is Revolutionizing the Classroom
-					</div>
-
-				
-				</div>
-			
-		</div>
-
-
-	</div>
-
-			
-		</div>
-	</div>
 
 </section>
 		</div>

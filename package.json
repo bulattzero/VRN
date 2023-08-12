@@ -22,6 +22,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^4.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "^1.2.1",
     "gulp-px2rem-converter": "^1.6.0",
     "gulp-rem-to-px": "^1.0.1",
