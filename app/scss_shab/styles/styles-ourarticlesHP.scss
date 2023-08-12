@@ -1,0 +1,97 @@
+.vi-ourarticles {
+	position: relative;
+	.vi-graphics {
+		position: relative;
+		&__shining-desktop {
+			position: absolute;
+		}
+		&__shining-mobile {
+			position: absolute;
+		}
+		&__backgroundimg{
+			position: absolute;
+			position: absolute;
+			height: 705px;
+			width: 100%;
+			background-repeat: no-repeat;
+
+		}
+	}
+	.vi-slogan {
+		&__subtitle {
+		}
+		&__tittle {
+		}
+	}
+	&__inner {
+	}
+	&__item {
+	}
+	.vi-overview{
+		display: flex;
+		&__item{
+			width: 50%;
+			.vi-recent-box{
+				width: 100%;
+				background:  #252532;
+				padding: 32px 120px 0 97px;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				gap: 32px;
+				&__name{
+					color: var(--greyscale-white, #FFF);
+					font-family: Chakra Petch;
+					font-size: 28px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+					letter-spacing: -0.14px;
+
+				}
+				&__item{
+					
+					
+				}
+				&__flex{
+					display: flex;
+					gap: 21px;
+
+				}
+				&__image {
+
+				}
+				&__badge {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+
+				}
+				&__tittle {
+					display: flex;
+					padding: 2px 10px;
+					justify-content: center;
+					align-items: center;
+					border-radius: 16px;
+					background: rgba(255, 255, 255, 0.30);
+					color: var(--white, #FFF);
+					
+					font-family: Chakra Petch;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 20px; /* 142.857% */
+					
+				}
+				&__description {
+
+				}
+			}
+
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,123 @@
+h2{
+	font-family: Chakra Petch;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: -0.24px;
+	color:  #FFF;
+}
+.vi-graphics{
+		&__background{
+			
+			width: 398.938px;
+			height: 496.528px;
+			background: #252532;
+		}
+		&__shining-desktop{
+			
+			width: 364.621px;
+			height: 608.059px;
+			transform: rotate(-90deg);
+			flex-shrink: 0;
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(105px);
+
+		}
+		&__shining-mobile{
+			
+			width: 274px;
+			height: 429px;
+			transform: rotate(-90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(78.96149444580078px);
+
+		}
+
+}
+
+.vi-aboutus{
+	&__inner{
+		display: flex;
+
+	
+	}
+	&__item:nth-child(1){
+		position: relative;
+		width: 50%;
+	
+
+	}
+	&__item:nth-child(2){
+		position: relative;
+		width: 50%;
+		.vi-slogan{
+			&__tittle{
+				width: 562px;
+			}
+			&__description{
+				width: 528px;
+
+			}
+			&__list{
+				display: flex;
+				flex-direction: column;
+
+			}
+			&__in-list{
+				display: flex;
+				align-items: center;
+				font-family: Chakra Petch;
+				font-style: normal;
+				font-weight: 400; 
+				color: #FFF;
+
+			}
+		}
+
+	}
+	&__pic{
+		position: absolute;
+
+	}
+	&__video{
+		position: absolute;
+
+	}
+	&__picmobile{
+		position: absolute;
+		display: none;
+
+	}
+	&__videomobile{
+		position: absolute;
+
+	}
+	
+
+	.vi-graphics{
+		position: relative;
+
+
+		&__background{
+			position: absolute;
+		
+		}
+		&__shining-desktop{
+			position: absolute;
+			
+
+		}
+		&__shining-mobile{
+			display: none;
+			width: 274px;
+			height: 429px;
+			transform: rotate(-90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(78.96149444580078px);
+
+		}
+	}
+
+	
+
+}
+.freehosting-2domains-link { display: none; }

@@ -1,0 +1,147 @@
+h2{
+	font-family: Chakra Petch;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.16px;
+}
+
+.vi-aboutus{
+	padding: toRem(300) 0 0 0;
+
+	.vi-graphics{
+		
+
+
+		&__background{
+			top: - toRem(105);
+			width: 300.007px;
+			height: 373.396px;
+			position: relative;
+    		margin: 0 auto;
+			right: toRem(35);
+		}
+		&__shining-desktop{
+			display: none;
+		}
+		&__shining-mobile{
+			display: block;
+			margin: - toRem(608) auto 0 auto;
+    		
+    		position: relative;
+    		bottom: - toRem(25);
+
+		}
+	}
+
+	&__inner{
+		
+		flex-direction: column;
+		gap: toRem(40);
+
+	
+	}
+	&__item:nth-child(1){
+		
+		width: 100%;
+	
+
+	}
+	&__item:nth-child(2){
+		
+		width: 100%;
+		
+		.vi-slogan{
+			&__tittle{
+				width: 100%;
+			}
+			&__description{
+				width: 100%;
+				margin-bottom: toRem(12);
+
+			}
+			&__list{
+				display: flex;
+				flex-direction: column;
+				gap: toRem(14);
+				margin-bottom: toRem(32);
+
+			}
+			&__in-list{
+				
+				gap: toRem(12);
+				font-size: toRem(16);
+				line-height: toRem(28); 
+				
+
+			}
+		}
+
+	}
+	&__pic{
+		display: none;
+		
+
+	}
+	&__video{
+	
+		right: toRem(15);
+		bottom: - toRem(23);
+
+	}
+	&__picmobile{
+		display: block;
+		
+		position: relative;
+		width: 391px;
+		margin: - toRem(395) auto toRem(50) auto;
+	
+
+	}
+	&__videomobile{
+	
+		right: toRem(15);
+		bottom: - toRem(23);
+
+	}
+
+
+}
+
+@media (min-width:320px) and (max-width:429px){
+
+	.vi-aboutus {
+		
+		overflow: hidden;
+
+		&__picmobile {
+			display: block;
+			position: relative;
+			width: 391px;
+			left: -90px;
+			margin: -394px auto 4.1666666667rem auto;
+			
+	}
+	&__item2{
+		.vi-slogan {
+	
+			&__description {
+				font-size: toRem(12);
+				
+	
+			}
+		}
+
+	}
+	
+	.vi-graphics{
+
+	
+	&__background{
+		right: 110px;
+	}
+	}
+
+}
+}

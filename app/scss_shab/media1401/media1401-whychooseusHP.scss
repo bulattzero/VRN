@@ -1,0 +1,70 @@
+h8{
+	font-size: toRem(20);
+}
+.vi-whychooseus {
+	padding: toRem(75) 0;
+	.vi-graphics {
+		
+		&__shining-desktop {
+			position: absolute;
+			right: 0;
+			margin: 0 toRem(100)
+		}
+		&__background{
+			position: absolute;
+			right: toRem(44);
+    		top: toRem(75)
+		}
+		&__shining-mobile{
+			display: none;
+		}
+	}
+	
+	&__inner {
+		width: 100%;
+	}
+	&__item:nth-child(1) {
+		position: relative;
+		width: 40%;
+		
+			.vi-slogan {
+				position: relative;
+				&__subtitle {
+					position: relative;
+					
+				}
+				&__tittle {
+					position: relative;
+					margin-bottom: toRem(32);
+				}
+			}
+		
+	}
+	&__item:nth-child(2) {
+		position: relative;
+		width: 60%;
+	}
+	&__pic{
+		position: absolute;
+		right: - toRem(30);
+    	top: - toRem(52);
+	}
+	&__picmobile{
+		display: none;
+	}
+	&__video{
+		position: absolute;
+		right: toRem(75);
+    	bottom: - toRem(37);
+	}
+	
+	.vi-asset {
+			gap: toRem(48);
+		&__tittle {
+			margin-bottom: toRem(12);
+		}
+		&__description {
+			font-size: toRem(16);
+		}
+	}
+}

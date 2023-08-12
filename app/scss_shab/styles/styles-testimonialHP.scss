@@ -1,0 +1,334 @@
+.vi-wrappers{
+	
+	.vi-testemonial {
+		width: 100%;
+		overflow: hidden;
+		height: 1050px;
+
+		.vi-graphics {
+			position: relative;
+			&__shining-desktop {
+				width: 347px;
+				height: 642px;
+				background: linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%)  rotate(-90deg);
+			}
+		}
+	
+		.vi-elipse {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+	
+			&__first {
+				width: 1247px;
+				height: 1247px;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+				margin: 0px auto;
+			}
+	
+			&__second {
+				width: 1084px;
+				height: 1084px;
+				flex-shrink: 0;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+				
+	
+			}
+	
+			&__third {
+				width: 899px;
+				height: 899px;
+				flex-shrink: 0;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+		
+	
+			}
+	
+			&__fourth {
+				width: 736.102px;
+				height: 736.102px;
+				flex-shrink: 0;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+			}
+	
+			&__fifth {
+				width: 564.631px;
+				height: 564.631px;
+				flex-shrink: 0;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+			}
+	
+			&__six {
+				width: 389.485px;
+				height: 389.485px;
+				flex-shrink: 0;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.17);
+				.vi-animation{
+					position: relative;
+					width: 10px;
+					height: 10px;
+					&__in{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+	
+					}
+					&__pic{
+						width: 50.447px;
+						height: 50.447px;
+						flex-shrink: 0;
+						border-radius: 50%;
+						border: 0.788px solid #18181B;
+						position: relative;
+						z-index: 11;
+					}
+					&__shine{
+						width: 52px;
+						height: 61px;
+						transform: rotate(-90deg);
+						background: linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%);
+						position: relative;
+						top: -100%;
+						z-index: 10;
+					}
+					.vi-response{
+						
+						&__text{
+							color:  #D1D1D1;
+							font-family: Chakra Petch;
+							font-style: normal;
+							font-weight: 400;
+						}
+						&__creator{
+							border-bottom: 1px solid transparent;
+							border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+							border-image-slice: 1;
+							color:  #FFF;
+							font-family: Chakra Petch;
+							font-style: normal;
+							font-weight: 400;
+							display: inline-block;
+							width: auto;
+							span{
+								color:  #D1D1D1;
+							}
+						}
+					}
+					
+					&__item{
+							width: 75px;
+							height: 75px;
+							background-color: #f00; 
+							border-radius: 50%;
+							position: absolute;
+							border: 1px solid white;
+							background: rgba(37, 37, 50, 0.60); 
+							cursor: pointer;
+					}
+				
+					
+					&__item:nth-child(1){
+						animation: orbit1 15s linear infinite; 
+					}
+					&__item:nth-child(2){
+						animation: orbit2 21s linear infinite; 
+					}
+					&__item:nth-child(3){
+						animation: orbit3 19s linear infinite; 
+					}
+					&__item:nth-child(4){
+						animation: orbit4 13s linear infinite; 
+					}
+					&__item:nth-child(5){
+						animation: orbit5 16s linear infinite; 
+					}
+					&__item:nth-child(6){
+						animation: orbit6 23s linear infinite; 
+					}
+					&__item:nth-child(7){
+						animation: orbit7 15s linear infinite;
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;
+					}
+					&__item:nth-child(8){
+						animation: orbit8 21s linear infinite;
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;
+					}
+					&__item:nth-child(9){
+						animation: orbit9 19s linear infinite; 
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;
+					}
+					&__item:nth-child(10){
+						animation: orbit10 13s linear infinite; 
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;
+					}
+					&__item:nth-child(11){
+						animation: orbit11 16s linear infinite; 
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;	
+					}
+					&__item:nth-child(12){
+						animation: orbit12 23s linear infinite; 
+						width: 297px;
+						height: 123px;
+						border-radius: 17%;
+						visibility: hidden;
+					}
+					.vi-animation__item--active{
+						visibility: visible;
+					}
+					
+					@keyframes orbit1 {
+						from {
+						  transform: rotate(0deg) translateX(281px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(281px) rotate(-360deg);
+						}
+					  }
+					  
+					  @keyframes orbit2 {
+						from {
+						  transform: rotate(0deg) translateX(368px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(-360deg) translateX(368px) rotate(360deg);
+						}
+					  }
+					  @keyframes orbit3 {
+						from {
+						  transform: rotate(0deg) translateX(448px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(448px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit4 {
+						from {
+						  transform: rotate(0deg) translateX(543px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(543px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit5 {
+						from {
+						  transform: rotate(0deg) translateX(623px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(623px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit6 {
+						from {
+						  transform: rotate(0deg) translateX(623px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(-360deg) translateX(623px) rotate(360deg);
+						}
+					  }
+					  @keyframes orbit7 {
+						from {
+							transform: rotate(0deg) translateX(80px) rotate(0deg);
+						  }
+						  to {
+							transform: rotate(360deg) translateX(80px) rotate(-360deg);
+						  }
+					  }
+					  @keyframes orbit8 {
+						from {
+						  transform: rotate(0deg) translateX(180px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(-360deg) translateX(180px) rotate(360deg);
+						}
+					  }
+					  @keyframes orbit9 {
+						from {
+						  transform: rotate(0deg) translateX(260px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(260px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit10 {
+						from {
+						  transform: rotate(0deg) translateX(355px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(355px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit11 {
+						from {
+						  transform: rotate(0deg) translateX(435px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(360deg) translateX(435px) rotate(-360deg);
+						}
+					  }
+					  @keyframes orbit12 {
+						from {
+						  transform: rotate(0deg) translateX(435px) rotate(0deg);
+						}
+						to {
+						  transform: rotate(-360deg) translateX(435px) rotate(360deg);
+						}
+					  }
+				}
+			}
+	
+			&__pic {
+				position: relative;
+			}
+	
+		}
+	
+		&__inner {
+			position: relative;
+		}
+	
+		&__item:nth-child(1) {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			.vi-slogan {
+				&__subtitle {
+					display: inline-block;
+					width: auto;
+					margin: 0px auto;
+				}
+	
+			}
+		}
+		
+	}
+
+}
+

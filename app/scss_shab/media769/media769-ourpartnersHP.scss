@@ -1,0 +1,74 @@
+.vi-ourpartners {
+	padding: toRem(100) 0;
+	height: 600px;
+	.vi-graphics {
+		padding-top: toRem(254);
+    	transform: scale(0.4);
+		&__shining-desktop {
+			margin-top: - toRem(45);
+		
+			margin-left: - toRem(140);
+		}
+
+		.vi-elipse {
+			&__item:nth-child(1){
+				top: toRem(460);
+    			margin-left: - toRem(48);
+			}
+			&__item:nth-child(2){
+				top: toRem(240);
+    			margin-left: toRem(16);
+			}
+			&__item:nth-child(3){
+				top: toRem(80);
+				margin-left: toRem(182);
+			}
+			&__item:nth-child(4){
+				top: toRem(23);
+    			margin-left: toRem(400);
+			}
+			&__item:nth-child(5){
+				top: toRem(80);
+    			margin-left: toRem(620);
+			}
+			&__item:nth-child(6){
+				top: toRem(240);
+    			margin-left: toRem(788);
+			}
+			&__item:nth-child(7){
+				top: toRem(460);
+				margin-left: toRem(865);
+			}
+			&__first {
+				padding: toRem(69.37);
+			}
+			&__second {
+				padding: toRem(67.63);
+			}
+			&__third {
+				padding: toRem(68.39);
+			}
+			&__fourth {
+				padding: toRem(72.53);
+			}
+			&__six {
+				right: - toRem(13);
+				top: toRem(11);
+			}
+
+			&__pic {
+				left: - toRem(129);
+				top: - toRem(101);
+			}
+		}
+	}
+}
+@media (min-width:320px) and (max-width:429px) {
+
+	.vi-ourpartners {
+		overflow: hidden;
+		.vi-graphics{
+			padding: toRem(254) 0 toRem(100) 0;
+		}
+	}	
+}

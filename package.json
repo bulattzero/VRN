@@ -1,0 +1,46 @@
+{
+  "name": "gulp-easy",
+  "version": "1.0.0",
+  "description": " СОБРАНО ИЗ ГаВнА и палок, на основе видео взятых из: http://surl.li/gorym и http://surl.li/goryt",
+  "description2": "за основу взят метод описаный на канале от 0 до 1 ",
+  "description3": "чтобы все коректно работало желательно использовать версии плагинов указаных в списке! ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "From Vasia with love",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "fs-extra": "^11.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-px2rem-converter": "^1.6.0",
+    "gulp-rem-to-px": "^1.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-version-number": "^0.2.4",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-avif-html-nosvg-nogif-lazyload": "^1.0.1",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "path": "^0.12.7",
+    "sass": "^1.62.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "gulp-replace": "^1.1.4",
+    "vanilla-lazyload": "^17.8.3"
+  }
+}

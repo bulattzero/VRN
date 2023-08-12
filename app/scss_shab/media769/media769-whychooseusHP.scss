@@ -1,0 +1,106 @@
+h8{
+	font-size: toRem(20);
+}
+.vi-whychooseus {
+	padding: toRem(75) 0;
+	.vi-videomobile{
+		width: 145px;
+    	height: 95px;
+
+	}
+	.vi-graphics {
+		
+		&__shining-desktop {
+			display: none;
+		}
+		&__background{
+			position: relative;
+			right: toRem(44);
+    		top: toRem(42);
+			width: 296.55px;
+			height: 369.094px;
+			margin: 0 auto;
+		}
+		
+		&__shining-mobile{
+			position: relative;
+			display: block;
+			top: - toRem(330);
+			left: 0;
+			margin: 0 auto;
+		}
+	}
+	
+	&__inner {
+	
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	
+	&__item:nth-child(1) {
+		position: relative;
+		width: 100%;
+		margin: - toRem(200) auto 0 auto;
+	}
+	&__item:nth-child(2) {
+		position: relative;
+		width: 100%;
+	}
+	&__pic{
+		
+		display: none;
+	}
+	&__picmobile{
+		display: block;
+		width: 418px;
+		margin-top: - toRem(416);
+		margin-right:auto ;
+		margin-left:auto ;
+		margin-bottom: - toRem(171);
+		left: - toRem(30);
+		position: relative;
+		top: - toRem(429);
+	}
+	&__video{
+		right: toRem(75);
+    	bottom: - toRem(37);
+	}
+	&__videomobile{
+		position: relative;
+		left: toRem(211);
+		bottom: toRem(77);
+		width: 145px;
+		height: 95px;
+	}
+	.vi-slogan__tittle {
+		
+		margin-bottom: toRem(32);
+	}
+	.vi-asset {
+			gap: toRem(48);
+		&__tittle {
+			margin-bottom: toRem(12);
+		}
+		&__description {
+			font-size: toRem(16);
+		}
+	}
+}
+
+	@media (min-width:320px) and (max-width:429px){
+
+		
+		.vi-whychooseus{
+			overflow: hidden;
+			}
+			
+			.vi-whychooseus__videomobile{
+				left: toRem(36);
+				margin: 0 auto;
+			}
+		}
+
+		
+	
+
+	

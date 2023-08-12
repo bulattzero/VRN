@@ -1,0 +1,70 @@
+
+
+.vi-getstarted {
+	padding: toRem(100) 0;
+	.vi-graphics {
+		&__shining-desktop {
+			display: none;
+		}
+	}
+
+	&__inner {
+		gap: toRem(48);
+	}
+	&__item:nth-child(1) {
+		width: auto;
+		
+	}
+	&__item:nth-child(2) {
+		gap: toRem(48);
+	}
+
+	.vi-video {
+		border-radius: toRem(25);
+	
+
+
+		&__player-atribute {
+			top: - toRem(40);
+			margin-bottom: - toRem(15);
+			padding: 0 toRem(34);
+			gap: toRem(12);
+		}
+
+		&__progress-line {
+			border-radius: toRem(4);
+		}
+
+		&__buffering-progress {
+			border-radius: toRem(4);
+		}
+
+		&__progress {
+			border-radius: toRem(4);
+		}
+
+		&-badge {
+			gap: toRem(12);
+			top: toRem(20);
+			left: toRem(16);
+
+			&__namesection {
+				border-radius: toRem(16);
+				margin: 0 auto 0 0;
+				font-size: toRem(14);
+				line-height: toRem(20);
+				padding: toRem(2) toRem(10);
+			}
+			&__tittle{
+				font-size: toRem(20);
+				line-height: normal;
+				
+			}
+		}
+	}
+
+
+	.vi-button {
+		margin: 0px auto;
+	}
+}

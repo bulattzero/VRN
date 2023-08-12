@@ -1,0 +1,104 @@
+h8{
+	font-family: Chakra Petch;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	color: #fff;
+}
+.vi-whychooseus {
+	
+	.vi-graphics {
+		position: relative;
+		&__shining-desktop {
+			position: absolute;
+			right: 0;
+		}
+		&__background{
+			position: absolute;
+			right: 0;
+	
+		}
+		&__shining-mobile{
+			position: absolute;
+			display: none;
+			
+		}
+	}
+	
+	&__inner {
+		position: relative;
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		width: 50%;
+	}
+	&__pic{
+		position: absolute;
+		right: -95px;
+		top: -52px;
+	}
+	&__picmobile{
+		display: none;
+	}
+	&__video{
+		position: absolute;
+		
+	}
+	.vi-slogan {
+		position: relative;
+	}
+	.vi-slogan__subtitle {
+		position: relative;
+		
+	}
+	.vi-slogan__tittle {
+		position: relative;
+	
+	}
+	.vi-asset {
+			display: flex;
+			flex-direction: column;
+			
+		&__item {
+			position: relative;
+			
+		}
+	
+		&__tittle {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+			cursor: pointer;
+		}
+		&__description {
+			position: relative;
+			font-family: Chakra Petch;
+			font-style: normal;
+			font-weight: 400;
+			color: #D1D1D1;
+			transform-origin: 0 0;
+			transform: rotateX(-90deg);
+			transition: 0.3s;
+			opacity: 0;
+			visibility: hidden;
+			display: none;
+		}
+	}
+	
+	.vi-asset__item--active{
+		.vi-asset__description{
+				transform: rotateX(0deg);
+				opacity: 1;
+				visibility: visible;
+				display: block;
+			}
+			.vi-asset__tittle img{
+					transform: rotateX(180deg);
+					transition: 0.3s;
+				}
+
+	}
+}

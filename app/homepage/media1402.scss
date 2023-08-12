@@ -1,0 +1,44 @@
+:root,
+html {
+	font-size: 18px;
+}
+@function toRem($value) {
+	$remValue: calc($value / 18) + rem; 
+	@return $remValue;
+}
+/* HEADER*/
+
+@import"../scss_shab/media1402/media1402-headerHP.scss";
+
+/*TOP*/
+
+@import"../scss_shab/media1402/media1402-topHP.scss";
+
+/*TOP*/
+
+@import"../scss_shab/media1402/media1402-aboutusHP.scss";
+/*Ourservice*/
+
+@import"../scss_shab/media1402/media1402-ourserviceHP.scss";
+
+/*Whychooseus*/
+
+@import"../scss_shab/media1402/media1402-whychooseusHP.scss";
+
+/*Getstarted*/
+
+@import"../scss_shab/media1402/media1402-getstartedHP.scss";
+/*Testimonial*/
+
+@import"../scss_shab/media1402/media1402-testimonialHP.scss";
+
+/*Ourpricing*/
+
+@import"../scss_shab/media1402/media1402-ourpricing.scss";
+
+/*Ourpartner*/
+
+@import"../scss_shab/media1402/media1402-ourpartnersHP.scss";
+/*Ourarticles*/
+
+@import"../scss_shab/media1402/media1402-ourarticlesHP.scss";
