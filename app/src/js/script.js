@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  $(".vi-firstslider").slick({
-    arrows: true,
+  $(".vi-popular-box__inner").slick({
+    arrows: false,
     dots: true,
     slidesToShow: 1,
     autoplay: true,
     
-    autoplaySpeed: 8000,
+    
   });
   $(".vi-secondslider").slick({
     arrows: true,
@@ -91,6 +91,8 @@ $(document).ready(function () {
 	  ".vi-elipse__third",
 	  ".vi-elipse__fourth",
 	  ".vi-elipse__fifth",
+	  ".vi-popular-box__item",
+	  
 	  
 
 	]
@@ -315,5 +317,32 @@ $('.vi-asset__item').on('click', function () {
 	
 	$(this).addClass('vi-asset__item--active');
 });
- });
+
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+	const container = document.querySelector("vi-recent-box");
+	const content = container.querySelector(".content");
+  
+	container.style.overflow = "hidden";
+  
+	const scrollbar = document.createElement("div");
+	scrollbar.classList.add("scrollbar");
+	container.appendChild(scrollbar);
+  
+	const track = document.createElement("div");
+	track.classList.add("track");
+	scrollbar.appendChild(track);
+  
+	const thumb = document.createElement("div");
+	thumb.classList.add("thumb");
+	track.appendChild(thumb);
+  
+	thumb.style.height = (container.clientHeight / content.scrollHeight) * 100 + "%";
+  
+	content.addEventListener("scroll", function () {
+	  const scrollPercentage = (content.scrollTop / (content.scrollHeight - content.clientHeight)) * 100;
+	  thumb.style.top = scrollPercentage + "%";
+	});
+  });
 

@@ -1,0 +1,161 @@
+.vi-ourarticles {
+	padding-bottom: toRem(67);
+	.vi-graphics {
+		
+		
+		&__backgroundimg{
+			margin-left: - toRem(205);
+			top: toRem(365);
+		}
+	}
+
+	&__item {
+		padding-bottom: toRem(72);
+	}
+	.vi-subscribe{
+		border-radius: toRem(4);
+		align-items: center;
+		padding: toRem(38) toRem(74) toRem(31) toRem(74);
+		&__item{
+			width: 50%;
+		}
+		&__item:nth-child(1){
+			font-size: toRem(40);
+			line-height: toRem(58); 
+			letter-spacing: - toRem(0.2);
+		}
+		&__item:nth-child(2){
+			padding: toRem(27)  0 toRem(26) 0;
+			
+		}
+		&__container{
+			border-radius: toRem(2);
+		}
+		&__inner{
+			padding: toRem(14) 0 toRem(14) toRem(14);
+			gap: toRem(8);
+
+			input{
+				margin: 0 toRem(2) 0 0;
+				font-size: toRem(18);
+				line-height: toRem(28);
+			}
+		
+			  input::placeholder{
+				font-size: toRem(18);
+				line-height: toRem(28);
+			  }
+		}
+		&__button{
+			padding: toRem(16.667);
+			
+		}
+	}
+	.vi-overview{
+		padding-bottom: toRem(150);
+		&__item:nth-child(1){
+			width: 50%;
+		}
+		&__item:nth-child(2){
+			width: 50%;
+		}
+		&__button{
+			font-size: toRem(14);
+			line-height: toRem(14);
+			letter-spacing: toRem(1.5);
+			padding: toRem(18) toRem(38);
+			margin-right: toRem(120);
+			top: - toRem(130);
+		}
+		&__item{
+			width: 50%;
+			.vi-recent-box{
+				padding:toRem(32) toRem(27) toRem(32) toRem(140);
+				gap: toRem(32);
+    			left: toRem(30);
+				width: 730px;
+				&__inner{
+					gap: toRem(32);
+				}
+				&__name{
+					font-size: toRem(28);
+					letter-spacing: - toRem(0.14);
+				}
+				&__item{
+					padding-bottom: toRem(32);
+					margin-right: toRem(16);
+				}
+				&__flex{
+					gap: toRem(13);
+				}
+				&__image {
+					margin-right: toRem(7);
+				}
+				&__badge {
+					gap: toRem(8);
+				}
+				&__tittle {
+					padding: toRem(2) toRem(10);
+					border-radius: toRem(16);
+					font-size: toRem(14);
+					line-height: toRem(20); 
+				}
+				&__description {
+					font-size: toRem(18);
+				}
+			
+				.vi-next-button{
+					padding: toRem(13.333);
+				}
+			}
+		
+			.vi-recent-box__inner::-webkit-scrollbar-thumb {
+				border-radius: toRem(4); 
+			  }
+			  
+			  
+			
+			  .vi-popular-box{
+				gap: toRem(32);
+				padding-top: toRem(83);
+				&__name{
+					font-size: toRem(28);
+					letter-spacing: - toRem(0.14);
+				}
+			
+				&__item{
+					padding:toRem(281) toRem(24) toRem(24) toRem(24);
+				}
+				&__flex{
+					gap: toRem(29);
+				}
+				&__badge{
+					gap: toRem(12);
+				}
+				&__tittle{
+					border-radius: toRem(16);
+					padding: toRem(2) toRem(10);
+					font-size: toRem(14);
+					line-height: toRem(20); 
+				}
+				&__description{
+					font-size: toRem(32);
+					letter-spacing: - toRem(0.16);
+				}
+				
+				.vi-next-button{
+					padding: toRem(16.667);
+				}
+			  }
+			
+		
+	}
+}
+
+   .slick-dots {
+	gap: toRem(12);
+    margin-top: toRem(34);
+   }
+  
+
+}

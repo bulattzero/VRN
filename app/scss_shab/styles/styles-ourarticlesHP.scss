@@ -1,119 +1,379 @@
 .vi-ourarticles {
 	position: relative;
+
 	.vi-graphics {
 		position: relative;
+
 		&__shining-desktop {
 			position: absolute;
 		}
+
 		&__shining-mobile {
 			position: absolute;
+			display: none;
+			width: 203px;
+			height: 464px;
+			transform: rotate(-90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%);
+
 		}
-		&__backgroundimg{
-			position: absolute;
+
+		&__backgroundimg {
 			position: absolute;
 			height: 705px;
 			width: 100%;
 			background-repeat: no-repeat;
-
 		}
 	}
+
 	.vi-slogan {
 		&__subtitle {
 			position: relative;
 		}
+
 		&__tittle {
 			position: relative;
 		}
 	}
+
 	&__inner {
 		position: relative;
 	}
+
 	&__item {
 		position: relative;
 	}
-	.vi-overview{
+
+	.vi-subscribe {
+		background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+		position: relative;
+		width: 100%;
+		height: auto;
 		display: flex;
-		&__item{
-			width: 50%;
-			.vi-recent-box{
+
+		
+
+		&__item:nth-child(1) {
+			color: #FFF;
+			font-family: Chakra Petch;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+
+		}
+
+		&__item:nth-child(2) {
+			display: flex;
+			justify-content: end;
+		}
+
+		&__container {
+			width: 365px;
+			height: 56px;
+			background: rgba(255, 255, 255, 0.07);
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__inner {
+			display: flex;
+			align-items: center;
+
+			input {
+				text-rendering: auto;
+				letter-spacing: unset;
+				word-spacing: unset;
+				text-transform: none;
+				text-indent: 0px;
+				text-shadow: none;
+				display: inline-block;
+				text-align: start;
+				appearance: auto;
+				-webkit-rtl-ordering: logical;
+				cursor: text;
+				background-color: transparent;
+				padding: 0;
+				border-style: unset;
+				border-color: unset;
+				border-image: initial;
+				font-family: "Chakra Petch";
+				font-style: normal;
+				font-weight: 400;
+				color: #fff;
 				width: 100%;
-				background:  #252532;
-				padding: 32px 120px 0 97px;
+			}
+
+			input:focus {
+				outline: none;
+				border: none;
+			}
+
+			input::placeholder {
+				font-family: 'Chakra Petch';
+				font-style: normal;
+				font-weight: 400;
+				color: #fff;
+			}
+		}
+
+		&__button {
+			background: rgba(255, 255, 255, 0.21);
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.vi-overview {
+		display: flex;
+
+		&__item:nth-child(1) {
+			position: relative;
+			z-index: 11;
+		}
+
+		&__item:nth-child(2) {
+			position: relative;
+			z-index: 10;
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: end;
+
+		}
+
+		&__button {
+			color: #FFF;
+			text-align: center;
+			font-family: Chakra Petch;
+			font-style: normal;
+			font-weight: 700;
+			text-transform: uppercase;
+			background: rgba(255, 255, 255, 0.06);
+			width: fit-content;
+			position: relative;
+			border: 1px solid transparent;
+			border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+			border-image-slice: 1;
+		}
+
+		&__item {
+			width: 50%;
+
+			.vi-recent-box {
+				width: 100%;
+				background: #252532;
 				height: auto;
 				display: flex;
 				flex-direction: column;
-				gap: 32px;
 				position: relative;
-				&__name{
+				z-index: 10;
+
+				&__inner {
+					position: relative;
+					overflow: auto;
+					height: 440px;
+				}
+
+				&__name {
 					color: #FFF;
 					font-family: Chakra Petch;
-					font-size: 28px;
 					font-style: normal;
 					font-weight: 600;
 					line-height: normal;
-					letter-spacing: -0.14px;
+				}
+
+				&__item {
+					position: relative;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
 				}
-				&__item{
-					
-					position: relative;
-					padding-bottom: 32px;
-					border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
-					
-				}
-				&__flex{
+
+				&__flex {
 					display: flex;
-					gap: 13px;
 					align-items: center;
+					justify-content: space-between;
 				}
+
 				&__image {
 					position: relative;
-					margin-right: 7px;
-
 				}
+
 				&__badge {
 					display: flex;
 					flex-direction: column;
-					gap: 8px;
-
+					width: 537px;
 				}
+
 				&__tittle {
 					display: flex;
-					padding: 2px 10px;
 					justify-content: center;
 					align-items: center;
-					border-radius: 16px;
 					background: rgba(255, 255, 255, 0.30);
-					color: var(--white, #FFF);
+					color: #FFF;
 					margin-right: auto;
 					font-family: Chakra Petch;
-					font-size: 14px;
 					font-style: normal;
 					font-weight: 500;
-					line-height: 20px; 
-					
+					cursor: pointer;
 				}
+
 				&__description {
 					position: relative;
 					color: #FFF;
 					font-family: Chakra Petch;
-					font-size: 18px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: normal;
-
 				}
-				.vi-next-button{
+
+				.vi-next-button {
 					background: rgba(255, 255, 255, 0.06);
-					padding: 13.333px;
+					border: 1px solid transparent;
+					border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+					border-image-slice: 1;
 
 				}
 			}
 
+			.vi-recent-box__inner::-webkit-scrollbar {
+				width: 2px;
+			}
+
+			.vi-recent-box__inner::-webkit-scrollbar-thumb {
+				background-color: #f1f1f1;
+
+				height: 31px;
+			}
+
+			.vi-recent-box__inner::-webkit-scrollbar-thumb:hover {
+				background-color: green;
+			}
+
+			.vi-recent-box__inner::-webkit-scrollbar-track {
+
+				background-color: #3f3e4c;
+			}
+
+			.vi-recent-box__inner::-webkit-scrollbar-button {
+				display: none;
+			}
+
+			.vi-popular-box {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				z-index: 11;
+
+				&__name {
+					color: #FFF;
+					font-family: Chakra Petch;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+				}
+
+				&__inner {
+					position: relative;
+				}
+
+				&__item {
+					position: relative;
+					height: 425px;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+
+				&__flex {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				&__badge {
+					display: flex;
+					flex-direction: column;
+				}
+
+				&__tittle {
+					background: rgba(255, 255, 255, 0.30);
+					margin-right: auto;
+					color: #FFF;
+					text-align: center;
+					font-family: Chakra Petch;
+					font-style: normal;
+					font-weight: 500;
+				}
+
+				&__description {
+					color: #FFF;
+					font-family: Chakra Petch;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+
+				}
+
+				.vi-next-button {
+					border: 1px solid transparent;
+					border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+					border-image-slice: 1;
+				}
+			}
+
+
 		}
 	}
+
+	.slick-slider {
+		min-width: 0;
+	}
+
+	.slick-list {
+		overflow: hidden;
+	}
+
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.slick-dots li {
+		list-style: none;
+
+		width: 9px;
+		height: 3px;
+
+	}
+
+	.slick-dots li.slick-active {
+		width: 17px;
+	}
+
+	.slick-dots li.slick-active button {
+
+		opacity: unset;
+		width: 26px;
+		height: 3px;
+	}
+
+	.slick-dots button {
+		font-size: 0;
+		width: 9px;
+		height: 3px;
+		opacity: 0.2;
+	}
+
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		list-style: none;
+		margin-block-start: unset;
+		margin-block-end: unset;
+		margin-inline-start: unset;
+		margin-inline-end: unset;
+		padding-inline-start: unset;
+	}
+
+
 }
-
-
-
-
