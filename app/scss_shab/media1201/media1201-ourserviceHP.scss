@@ -1,6 +1,6 @@
 
 h7{
-	font-size: toRem(20);
+	@include Heading_7;
 }
 .vi-ourservice{
 	padding: toRem(150) 0 ;
@@ -17,8 +17,13 @@ h7{
 		justify-content: space-between;
 		.vi-slogan{
 			&__description{
-				width: 625px
+				width: 625px;
+				@include Body_1;
 	
+			}
+			
+			&__subtitle {
+				@include Caption_1;
 			}
 		}
 

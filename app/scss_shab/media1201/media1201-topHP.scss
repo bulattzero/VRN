@@ -1,5 +1,5 @@
 h1{
-	font-size: toRem(64);
+	@include Heading_1;
 }
 
 .vi-top {
@@ -32,6 +32,7 @@ h1{
 			&__description {
 				width: 446px;
 				margin-bottom: toRem(32);
+				@include Body_1;
 			}
 		
 			&__low {
@@ -50,8 +51,7 @@ h1{
 
 .vi-button {
 	padding: toRem(18) toRem(38);
-	font-size: toRem(14);
-	line-height: toRem(14);
+	@include Button_1;
 }
 
 .vi-happyclient {
@@ -80,17 +80,20 @@ h1{
 
 	&__tittle {
 		margin-top: toRem(42);
-		font-size: toRem(20);
+		@include Heading_7;
 	}
 
 	&__description{
 		margin-top: toRem(12);
-		font-size: toRem(14);
-		line-height: toRem(28);
+		@include Body_2;
 	}
 }
 .vi-slogan {
 	gap: toRem(12);
+	&__subtitle{
+		@include Caption_1;
+	}
+
 
 
 

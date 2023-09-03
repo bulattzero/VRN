@@ -1,0 +1,166 @@
+@mixin Heading_1 {
+	font-family: Chakra Petch;
+	font-size: toRem(64);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: - toRem(0.32);
+  }
+  @mixin Heading_2 {
+	font-family: Chakra Petch;
+	font-size: toRem(48);
+	font-style: normal;
+	font-weight: 600;
+	line-height: toRem(58); 
+	letter-spacing: - toRem(0.24);
+  }
+  @mixin Heading_3{
+	font-family: Chakra Petch;
+	font-size: toRem(40);
+	font-style: normal;
+	font-weight: 600;
+	line-height: toRem(58);
+	letter-spacing: - toRem(0.2);
+  }
+  @mixin Heading_4{
+	font-family: Chakra Petch;
+	font-size: toRem(36);
+	font-style: normal;
+	font-weight: 500;
+	line-height: toRem(44); 
+	letter-spacing: - toRem(0.72);
+  }
+  @mixin Heading_5{
+	font-family: Chakra Petch;
+	font-size: toRem(32);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: - toRem(0.16);
+  }
+  @mixin Heading_6{
+	font-family: Chakra Petch;
+	font-size: toRem(28);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: - toRem(0.14);
+  }
+  @mixin Heading_7{
+	font-family: Chakra Petch;
+	font-size: toRem(20);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+  }
+  @mixin Heading_8{
+	font-family: Chakra Petch;
+	font-size: toRem(20);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+  }
+  @mixin Heading_9{
+	font-family: Chakra Petch;
+	font-size: toRem(18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+  }
+  @mixin Heading_10{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 600;
+	line-height: toRem(28);
+  }
+  @mixin Heading_11{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+  }
+  @mixin Heading_12{
+	font-family: Chakra Petch;
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+  }
+  @mixin Body_1{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 300;
+	line-height: toRem(28);
+  }
+  @mixin Body_2{
+	font-family: Chakra Petch;
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 400;
+	line-height: toRem(28); 
+  }
+  @mixin Body_3{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 400;
+	line-height: toRem(28); 
+  }
+  @mixin Body_4{
+	font-family: Chakra Petch;
+	font-size: toRem(12);
+	font-style: normal;
+	font-weight: 400;
+	line-height: toRem(20); 
+  }
+  @mixin Caption_1{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: toRem(2.24);
+	text-transform: uppercase;
+  }
+  @mixin Caption_2{
+	font-family: Chakra Petch;
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 500;
+	line-height: toRem(20); 
+  }
+  @mixin Caption_3{
+	font-family: Chakra Petch;
+	font-size: toRem(10);
+	font-style: normal;
+	font-weight: 500;
+	line-height: toRem(14); 
+  }
+  @mixin Button_1{
+	font-family: Chakra Petch;
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 700;
+	line-height: toRem(14); 
+	letter-spacing: toRem(1.5);
+	text-transform: uppercase;
+  }
+  @mixin Button_2{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 300;
+	line-height: toRem(28); 
+  }
+  @mixin Button_3{
+	font-family: Chakra Petch;
+	font-size: toRem(16);
+	font-style: normal;
+	font-weight: 300;
+	line-height: toRem(28);
+
+  }
+ 

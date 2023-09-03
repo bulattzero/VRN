@@ -1,0 +1,26 @@
+@import"../scss_shab/media993/media993-topHP.scss";
+.vi-top{
+	padding: toRem(150) 0;
+
+	&__inner {
+		padding-bottom: toRem(54);
+	}
+	.vi-graphics{
+		&__backgroundimg{
+			bottom: -200px;
+    		z-index: -1;
+		}
+	}
+	&__item:nth-child(1) {
+		width: 100%;
+		text-align: center;
+		.vi-slogan{
+			&__tittle {
+				width: fit-content;
+				margin: 0px auto;
+			}
+			
+		}
+		
+	}
+}

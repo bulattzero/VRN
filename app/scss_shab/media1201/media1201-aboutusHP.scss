@@ -1,6 +1,5 @@
 h2{
-	font-size: toRem(48);
-	line-height: toRem(58);
+	@include Heading_2;
 }
 
 .vi-aboutus{
@@ -22,9 +21,7 @@ h2{
     		margin-left: toRem(80);
 
 		}
-		&__shining-mobile{
-
-		}
+		
 	}
 
 	&__inner{
@@ -48,7 +45,12 @@ h2{
 			&__description{
 				width: 100%;
 				margin-bottom: toRem(12);
+				@include Body_1;
 
+			}
+			&__subtitle {
+				@include Caption_1;
+				
 			}
 			&__list{
 				display: flex;
@@ -58,16 +60,8 @@ h2{
 
 			}
 			&__in-list{
-				display: flex;
-				align-items: center;
 				gap: toRem(12);
-				font-family: Chakra Petch;
-				font-size: toRem(16);
-				font-style: normal;
-				font-weight: 400;
-				line-height: toRem(28); 
-				color: #FFF;
-
+				@include Body_3; 
 			}
 		}
 

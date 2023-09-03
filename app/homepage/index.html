@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-	{% set title="Home" %}
+	{% set title="VRNas" %}
+	{% set keywords="Virtual Reality, Virtual Stuff, Virtual Games" %}
+	{% set description="Virtual Reality" %}
+	{% set script1="js/jquery-3.4.1.min.js" %}
+	{% set script2="js/lazyload.min.js" %}
+	{% set script3="js/slick.min.js" %}
+	{% set script4="js/script.js" %}
 	{% include 'head.html' %}
 <body>
 	<div class="vi-wrapper">
@@ -13,18 +19,42 @@
 			</div>
 		</div>
 		<!-- Section Header begin -->
+		{%set optionalClass1="vi-menu__item--current" %}
 		{% include 'header.html' %}
 	</div>
 	<!-- Header end -->
 	<main>
 		<!-- Section TOP begin -->
 		<div class="vi-wrapper">
+			{% set Slogan_tittle= "Immerse Yourself in Virtual Reality" %}
 			{% include 'vr-topHP.html' %}
 		</div>
 		<!-- TOP end -->
 		<!-- Section Aboutus begin -->
 		<div class="vi-wrapper">
+			{% set adress__file1="@img/man_look_right2.jpg" %}
+			{% set alt__file1="man_look_right2" %}
+			{% set width_file1="519" %}
+			{% set height_file1="622" %}
+
+			{% set adress__file2="@img/glases_video.jpg" %}
+			{% set alt__file2="Happy_Client" %}
+			{% set width_file2="130" %}
+			{% set height_file2="88" %}
+
+			{% set adress__file3="@img/man_look_right2_mobile.jpg" %}
+			{% set alt__file3="man_look_right2_mobile" %}
+			{% set width_file3="391" %}
+			{% set height_file3="468" %}
+
+			{% set adress__file4="@img/glases_videomobile.jpg" %}
+			{% set alt__file4="glases_videomobile" %}
+			{% set width_file4="98" %}
+			{% set height_file4="68" %}
+
 			
+			{% set Slogan_tittle="Bring your events to life like never before with our VR services." %}
+			{% set Slogan__description1="VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light." %}
 			{% include 'vr-aboutusHP.html' %}
 		</div>
 		<!-- Aboutus end -->
@@ -36,7 +66,35 @@
 		<!-- Ourservice end -->
 		<!-- Section Whychooseus begin -->
 		<div class="vi-wrapper">
-			
+			{% set adress__file1="@img/man_left.jpg" %}
+			{% set alt1="man_left" %}
+			{% set width1="563" %}
+			{% set height1="622" %}
+
+			{% set adress__file2="@img/glases_video2.jpg" %}
+			{% set alt2="glases_video2" %}
+			{% set width2="196" %}
+			{% set height2="128" %}
+			{% set adress__file1="@img/man_left.jpg" %}
+			{% set alt1="man_left" %}
+			{% set width1="563" %}
+			{% set height1="622" %}
+
+			{% set adress__file3="@img/man_leftmobile.jpg" %}
+			{% set alt3="man_look_right2mobile" %}
+			{% set width3="418" %}
+			{% set height3="492" %}
+
+			{% set adress__file4="@img/glases_video2mobile.jpg" %}
+			{% set alt4="glases_videomobile" %}
+			{% set width4="145" %}
+			{% set height4="95" %}
+
+			{% set adress__file2="@img/glases_video2.jpg" %}
+			{% set alt2="glases_video2" %}
+			{% set width2="196" %}
+			{% set height2="128" %}
+
 			{% include 'vr-whychooseusHP.html' %}
 		</div>
 		<!-- Whychooseus end -->
@@ -70,5 +128,21 @@
 		</div>
 		<!-- Section Ourarticles end -->
 	</main>
+	<!-- <div class="vi-wrapper">
+	
+		<!-- Section footer begin -->
+		{% include 'footer.html' %}
+		
+		<div class="vi-wrapper__background-footer">
+			<div class="vi-wrapper__container">
+					<div class="vi-wrapper__deskt-top-bg">
+						<img class="lazy" data-src="@img/Uptucha2.jpg" alt="Uptucha2" width="1011" height="498" >
+					</div>
+					<div class="vi-wrapper__mob-bg">
+						<img class="lazy" data-src="@img/Uptucha2__mob.jpg" alt="Uptucha2" width="637" height="314" >
+					</div>
+			</div>
+		</div>
+	</div> -->
 </body>
 </html>

@@ -2,10 +2,16 @@
 html {
 	font-size: 14px;
 }
+
+/* MIXINS*/
+
+@import"../scss_shab/mixins.scss";
+
 @function toRem($value) {
 	$remValue: calc($value / 14) + rem; 
 	@return $remValue;
 }
+
 /* HEADER*/
 @import"../scss_shab/media993/media993-headerHP.scss";
 /*TOP*/
@@ -38,6 +44,9 @@ html {
 /*Ourarticles*/
 
 @import"../scss_shab/media993/media993-ourarticlesHP.scss";
+
+/* FOOTER*/
+@import"../scss_shab/media993/media993-footerHP.scss";
 
 
 

@@ -197,19 +197,19 @@ async function copyimg(done){
 // ПОСТРОЕНИЕ СТИЛЕЙ КАТАЛОГА
  async function stylesfirstpage () {
 	return src ([
-		'app/firstpage/style.scss',
-		'app/firstpage/media769.scss',
-		'app/firstpage/media993.scss',
-		'app/firstpage/media1201.scss',
-		'app/firstpage/media1401.scss',
-		'app/firstpage/media1402.scss',
+		'app/aboutuspage/style.scss',
+		'app/aboutuspage/media769.scss',
+		'app/aboutuspage/media993.scss',
+		'app/aboutuspage/media1201.scss',
+		'app/aboutuspage/media1401.scss',
+		'app/aboutuspage/media1402.scss',
 	])
 	.pipe(sourcemaps.init())
 	//.pipe(pxToRem())
 	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
 	.pipe(scss({outputStyle: 'expanded'}))
 	.pipe(sourcemaps.write())
-	.pipe(dest('app/src/firstpage/'))
+	.pipe(dest('app/src/aboutuspage/'))
 	// .pipe (browserSync.stream()) // отключено за ненадобностью
 }
  
@@ -221,12 +221,12 @@ async function watching(){
 	
 		'app/scss_shab/**/*.scss',
 		'app/homepage/*.scss',
-		'app/firstpage/*.scss',
+		'app/aboutuspage/*.scss',
 
 		
 		'app/html/*.html',
 		'app/homepage/*.html',
-		'app/firstpage/*.html',
+		'app/aboutuspage/*.html',
 		
 	], 	series ( construct,copyimg, copyjs,) ) ;//backupfonts //,transfercleanDist,
 	// watch (['app/js/*.js'], series (backupfonts,cleanDist,image, scripts, construct, repair),watch) .on('change',browserSync.reload) ;
@@ -359,7 +359,7 @@ function cleanDist(){
 	return src([
 		// 'app/firstpage/css/*.css',
 		// 'app/firstpage/*.*',
-		'app/firstpage/*.html',
+		'app/aboutuspage/*.html',
 	])
 	 .pipe(plumber( // ОТЛАВЛИВАЕТ ОШИБКИ И ВЫВОДИТ В ВИНДУ ОШИБКУ В УВЕДОМЛЕНИЯ
 		notify.onError({
@@ -367,12 +367,15 @@ function cleanDist(){
 			message: "Error: <%= error.message%>"
 		})
 	))
-	.pipe(fileinclude({ // СКЛЕЙКА ФАЙЛОВ HTML
-      prefix: '@@',
-      basepath: '@file'
-    }))
-	 .pipe(replace(/@@img\//g,'../img/')) // заменяет в html @img на img/
-	 .pipe(replace(/@@img_html\//g,'../img_html/')) // заменяет в html @img на img_html/
+	// .pipe(fileinclude({ // СКЛЕЙКА ФАЙЛОВ HTML
+    //   prefix: '@@',
+    //   basepath: '@file'
+    // }))
+	.pipe(nunjucksRender({
+		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
+	  }))
+	 .pipe(replace(/@img\//g,'../img/')) // заменяет в html @img на img/
+	 .pipe(replace(/@img_html\//g,'../img_html/')) // заменяет в html @img на img_html/
 	 .pipe(webpHtmlNosvg())
 	 .pipe(
 		versionNumber({
@@ -391,7 +394,7 @@ function cleanDist(){
 		}
 		})
 	 )
-	 .pipe(dest('app/src/firstpage'))
+	 .pipe(dest('app/src/aboutuspage'))
 }
 
 

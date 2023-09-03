@@ -6,8 +6,21 @@ body {
 	&__background{
 		position: absolute;
 		right: 0;
-
+		
 	}
+	&__background-footer{
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+	&__container{
+		position: relative;
+    	overflow: hidden;
+		margin-top: -415px;
+	}
+	
+	
+	
 }
 
 .vi-headers {

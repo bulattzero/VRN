@@ -1,9 +1,9 @@
 
 h7{
-font-size: toRem(20);
+	@include Heading_7;
 }
 .vi-ourservice{
-	padding: toRem(150) 0 0 0;
+	padding: toRem(150) 0;
 
 	.vi-graphics{
 		&__shining-desktop{
@@ -19,7 +19,11 @@ font-size: toRem(20);
 		margin: 0 auto;
 		.vi-slogan{
 			&__description{
-				width: 100%
+				width: 100%;
+				@include Body_1;
+			}
+			&__subtitle {
+				@include Caption_1;
 			}
 		}
 

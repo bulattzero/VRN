@@ -11,6 +11,11 @@ body {
 .vi-wrapper {
 	padding: 0 toRem(16);
 	position: relative;
+	&__container{
+		position: relative;
+    	overflow: hidden;
+		margin-top: -310px;
+	}
 
 	.vi-headcontainer {
 		padding: toRem(42) 0;
@@ -21,6 +26,14 @@ body {
 
 	}
 	&__mobilebg{
+		display: block;
+
+	}
+	&__deskt-top-bg{
+		display: none;
+
+	}
+	&__mob-bg{
 		display: block;
 
 	}

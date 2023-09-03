@@ -1,0 +1,41 @@
+.vi-navigation {
+	.vi-graphics {
+		&__shining-desktop {
+			filter: blur  55px;
+			top: toRem(125);
+		}
+		&__shining-mobile {
+
+			display: none;
+		}
+	}
+}
+
+
+
+.vi-navigation-box {
+	
+	padding: toRem(80) 0 ;
+
+	&__tittle {
+		@include Heading_1;
+		padding-bottom: toRem(32);
+
+
+	}
+	&__link {
+	
+		gap: toRem(4);
+		
+	}
+	&__item:nth-child(1){
+		@include Heading_11;
+		
+	}
+
+	&__item:nth-child(3){
+		@include Body_1;
+		padding-top: toRem(1);
+		
+	}
+}

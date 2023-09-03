@@ -1,8 +1,5 @@
 h1{
-	font-family: Chakra Petch;
-	font-size: toRem(48);
-	line-height: toRem(58); 
-	letter-spacing: -0.24px;
+	@include Heading_2;
 }
 
 
@@ -42,13 +39,15 @@ h1{
 		
 			&__description {
 				margin-bottom: toRem(32);
-				font-family: Chakra Petch;
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 300;
-				line-height: 28px;
+				@include Body_1;
 		
 			}
+			&__subtitle{
+				@include Caption_1;
+			}
+		
+		
+		
 		
 			&__low {
 				margin-top: toRem(32);
@@ -83,8 +82,7 @@ h1{
 }
 .vi-button {
 	padding: toRem(18) toRem(38);
-	font-size: toRem(14);
-	line-height: toRem(14);
+	@include Button_1;
 	
 
 	
@@ -139,13 +137,12 @@ h1{
 
 	&__tittle {
 		margin-top: toRem(42);
-		font-size: toRem(20);
+		@include Heading_7;
 	}
 
 	&__description {
 		margin-top: toRem(12);
-		font-size: toRem(14);
-		line-height: toRem(28);
+		@include Body_2;
 	}
 }
 

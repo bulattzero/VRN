@@ -1,0 +1,19 @@
+@import"../scss_shab/styles/styles-aboutusHP.scss";
+.vi-aboutus{
+	
+	&__inner{
+		
+		flex-direction: row-reverse;
+	}
+	&__item:nth-child(1){
+		width: 60%;
+	}
+	&__item:nth-child(2){
+		width: 40%;
+		.vi-slogan{
+			&__list{
+				display: none;
+			}
+		}
+	}
+}

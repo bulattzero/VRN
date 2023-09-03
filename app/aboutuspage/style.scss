@@ -1,0 +1,38 @@
+@import "../scss_shab/rooot.html.scss";
+
+/* Обнуление */
+@import "../scss_shab/nulled_styles.scss";
+
+/* MIXINS*/
+
+@import"../scss_shab/mixins.scss";
+
+/* Шрифты*/
+@function toRem($value) {
+	$remValue: calc($value / 16) + rem; 
+	@return $remValue;
+}
+@import "../scss_shab/font";
+
+
+
+
+/* HEADER*/
+@import"../scss_shab/styles/styles-headerHP.scss";
+
+
+/* Navigation*/
+@import"../scss_shab/styles/styles-navigation.scss";
+
+/* Aboutus*/
+@import"../scss_shab/styles/styles-aboutusOT.scss";
+
+/* topOT*/
+@import"../scss_shab/styles/styles-topOT.scss";
+
+/*Whychooseus*/
+
+@import"../scss_shab/styles/styles-whychooseusOT.scss";
+
+/* FOOTER */
+@import"../scss_shab/styles/styles-footerHP.scss"

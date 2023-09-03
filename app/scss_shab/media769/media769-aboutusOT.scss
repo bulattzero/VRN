@@ -1,0 +1,77 @@
+@import"../scss_shab/media769/media769-aboutusHP.scss";
+.vi-aboutus{
+	padding: unset;
+	display: flex;
+	flex-direction: column-reverse;
+	padding-top: 100px;
+	.vi-graphics{
+		&__background {
+			top: -373px;
+			right: unset;
+		}
+		&__shining-desktop{
+			right: toRem(80);
+			margin-right: toRem(80);
+			margin-left: unset;
+			
+		}
+		&__shining-mobile{
+			bottom:  toRem(150);
+		}
+
+	}
+	&__inner{
+		flex-direction: column-reverse;
+		gap: unset;
+	}
+	&__pic{
+			right: toRem(45);
+			top: -55px;
+			left: unset;
+		
+	}
+	&__picmobile{
+		top: unset;
+    	right: unset;
+		margin: 0px auto;
+	}
+	
+	&__item:nth-child(1){
+		width: 100%;
+	}
+	&__item:nth-child(2){
+		width: 100%;
+		.vi-slogan{
+			&__tittle{
+				width: 100%;
+			}
+			&__description{
+				width: 100%;
+				height: unset;
+			}
+			&__list{
+				display: none;
+			}
+		}
+		.vi-button{
+			display: none;
+		}
+	}
+	&__video{
+		right: 300px;
+	}
+	&__videomobile{
+	
+		right: toRem(270);
+		bottom: - toRem(23);
+
+	}
+}
+@media (min-width:320px) and (max-width:429px){
+
+	.vi-aboutus{
+		&__picmobile{
+			left: unset;
+		}
+	}
+}

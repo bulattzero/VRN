@@ -19,6 +19,14 @@ body {
 		display: none;
 
 	}
+	&__deskt-top-bg{
+		display: block;
+
+	}
+	&__mob-bg{
+		display: none;
+
+	}
 }
 
 .vi-headers {
@@ -27,6 +35,7 @@ body {
 	}
 	&__contactbutton{
 		padding: toRem(12) toRem(24);
+		@include Button_2;
 		
 	}
 }
@@ -34,6 +43,7 @@ body {
 .vi-menu {
 	&__top {
 		gap: toRem(40);
+		@include Button_3
 	}
 
 	&__item {

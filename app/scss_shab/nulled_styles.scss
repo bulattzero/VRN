@@ -19,6 +19,14 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+ul{
+	list-style-type: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -37,7 +45,7 @@ a:not([class]) {
 img,
 picture {
 	-webkit-user-drag: none;
-  display: block;
+  	display: block;
 }
 input,
 button,

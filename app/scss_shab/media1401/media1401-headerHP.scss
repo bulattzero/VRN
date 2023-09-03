@@ -19,6 +19,14 @@ body {
 		display: none;
 
 	}
+	&__deskt-top-bg{
+		display: block;
+
+	}
+	&__mob-bg{
+		display: none;
+
+	}
 }
 
 .vi-headers {
@@ -36,6 +44,7 @@ body {
 .vi-menu {
 	&__top {
 		gap: toRem(64);
+		@include Button_3;
 	}
 
 	&__item {

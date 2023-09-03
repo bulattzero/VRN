@@ -92,6 +92,7 @@ $(document).ready(function () {
 	  ".vi-elipse__fourth",
 	  ".vi-elipse__fifth",
 	  ".vi-popular-box__item",
+	  ".vi-wrapper__bg",
 	  
 	  
 
@@ -320,29 +321,5 @@ $('.vi-asset__item').on('click', function () {
 
 
 });
-document.addEventListener("DOMContentLoaded", function () {
-	const container = document.querySelector("vi-recent-box");
-	const content = container.querySelector(".content");
-  
-	container.style.overflow = "hidden";
-  
-	const scrollbar = document.createElement("div");
-	scrollbar.classList.add("scrollbar");
-	container.appendChild(scrollbar);
-  
-	const track = document.createElement("div");
-	track.classList.add("track");
-	scrollbar.appendChild(track);
-  
-	const thumb = document.createElement("div");
-	thumb.classList.add("thumb");
-	track.appendChild(thumb);
-  
-	thumb.style.height = (container.clientHeight / content.scrollHeight) * 100 + "%";
-  
-	content.addEventListener("scroll", function () {
-	  const scrollPercentage = (content.scrollTop / (content.scrollHeight - content.clientHeight)) * 100;
-	  thumb.style.top = scrollPercentage + "%";
-	});
-  });
+
 
