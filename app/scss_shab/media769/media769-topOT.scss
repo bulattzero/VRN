@@ -6,7 +6,7 @@
 	
 	.vi-graphics{
 		&__backgroundimg{
-			bottom: -200px;
+			bottom: - toRem(200);
     		z-index: -1;
 			left: unset;
 			top: unset;

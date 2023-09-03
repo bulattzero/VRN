@@ -93,6 +93,7 @@ $(document).ready(function () {
 	  ".vi-elipse__fifth",
 	  ".vi-popular-box__item",
 	  ".vi-wrapper__bg",
+	  ".vi-ourteam-card",
 	  
 	  
 

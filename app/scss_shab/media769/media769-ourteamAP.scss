@@ -1,0 +1,83 @@
+.vi-ourteam {
+	padding: toRem(100) 0;
+	&__item {
+		padding-top: toRem(32);
+		.vi-ourteam-card{
+			background-position: center;
+			background-size: unset;
+			&__item{
+				padding-top: toRem(300);
+			}
+			&__tittle{
+				@include Heading_10;
+				color: #FFF;
+			}
+			&__subtittle{
+				@include Body_4;
+				color: #FFF;
+			}
+		}
+	}
+	
+
+	.vi-slogan {
+		
+		gap: toRem(12);
+		&__subtitle {
+			width: fit-content;
+			margin: 0px auto;
+			color: #0CBAF1;
+			display: block;
+
+		}
+
+		&__tittle {
+			position: relative;
+			width: fit-content;
+			margin: 0px auto;
+
+		}
+	}
+
+	.vi-ourteam-box {
+		flex-direction: column-reverse;
+		&__button {
+			padding: toRem(18) toRem(38);
+			@include Button_1;
+			top:  toRem(32);
+			margin: 0px auto;
+			}
+			&__inner {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 5px;
+			}
+	
+			&__item {
+				width: 49%;
+				padding: toRem(9);
+			}
+		}
+
+		
+
+	}
+	@media (min-width:320px) and (max-width:550px){
+		.vi-ourteam{
+			.vi-ourteam-box{
+				&__inner {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 24px;
+				}
+				&__item{
+					width: 275px;
+				}
+				
+	
+			}
+
+		}
+		
+	}

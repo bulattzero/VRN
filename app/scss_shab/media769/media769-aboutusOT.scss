@@ -3,10 +3,10 @@
 	padding: unset;
 	display: flex;
 	flex-direction: column-reverse;
-	padding-top: 100px;
+	padding-top: toRem(100);
 	.vi-graphics{
 		&__background {
-			top: -373px;
+			top: - toRem(373);
 			right: unset;
 		}
 		&__shining-desktop{
@@ -26,7 +26,7 @@
 	}
 	&__pic{
 			right: toRem(45);
-			top: -55px;
+			top: - toRem(55);
 			left: unset;
 		
 	}
@@ -58,7 +58,7 @@
 		}
 	}
 	&__video{
-		right: 300px;
+		right: toRem(300);
 	}
 	&__videomobile{
 	
