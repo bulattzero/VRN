@@ -1,0 +1,25 @@
+.vi-statistic {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	background: radial-gradient(50% 50% at 50% 50%, #343445 0%, rgba(32, 32, 41, 0.00) 100%);
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+}
+&__tittle {
+	color: #0CBAF1;
+	
+	
+}
+&__number {
+	
+	color: #fff;
+}
+}
+
+

@@ -320,9 +320,13 @@
 			text-align: center;
 			.vi-slogan {
 				&__subtitle {
+					color: #0CBAF1;
 					display: inline-block;
 					width: auto;
 					margin: 0px auto;
+				}
+				&__tittle{
+					color: #fff;
 				}
 	
 			}

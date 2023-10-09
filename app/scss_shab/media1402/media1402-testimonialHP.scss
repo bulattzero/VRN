@@ -3,13 +3,24 @@
 
   .vi-testemonial {
     height: 1400px;
+	&__item{
+		.vi-slogan{
+			&__subtitle{
+				@include Caption_1;
 
+			}
+			&__tittle{
+				@include Heading_2;
+
+			}
+		}
+	}
     .vi-graphics {
       
-      padding: toRem(1535 ) 0 toRem(60) 0;
+      padding: toRem(1535) 0 toRem(60) 0;
 
       &__shining-desktop {
-        filter: blur(toRem(105));
+        filter: blur(105px);
       }
     }
 
@@ -40,7 +51,7 @@
           right: - toRem(144);
 
           &__shine {
-            filter: blur(toRem(10));
+            filter: blur(10px);
           }
 
           .vi-response {

@@ -1,0 +1,20 @@
+.vi-statistic {
+	padding-top: toRem(100) ;
+	gap: toRem(36);
+	flex-direction: column;
+	
+	&__item {
+		
+		gap: toRem(12);
+		
+}
+&__tittle {
+
+	@include Caption_1;
+	
+}
+&__number {
+	@include Heading_5;
+	
+}
+}

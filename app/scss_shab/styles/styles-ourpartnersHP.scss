@@ -3,6 +3,11 @@
 	&__inner {
 		text-align: center;
 	}
+	&__item{
+		.vi-slogan__subtitle{
+			display: block;
+		}
+	}
 	.vi-graphics {
     	position: relative;
 		&__shining-desktop {

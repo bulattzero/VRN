@@ -1,3 +1,6 @@
+h2{
+	@include Heading_5;
+}
 .vi-ourpricing {
 	padding: toRem(100) 0 toRem(150);
 	.vi-graphics{
@@ -19,6 +22,33 @@
 			}
 		}
 	}
+
+	&__item:nth-child(1){
+		.vi-slogan{
+			display: flex;
+			flex-direction: column;
+			gap: toRem(12);
+			&__subtitle{
+				@include Caption_1;
+				color: #0CBAF1;
+
+			}
+
+			&__tittle{
+				
+				color: #FFF;
+
+			}
+			&__description{
+				@include Body_1;
+				color:  #D1D1D1;
+				padding-top: toRem(2);
+
+			}
+		}
+	}
+
+
 	&__item:nth-child(2){
 		.vi-benefits{
 			height: auto;
@@ -80,6 +110,12 @@
 					font-size: toRem(12);
 					line-height: toRem(20); 
 					margin-top:toRem(14) ;
+				}
+				.vi-button{
+					background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+					padding: toRem(18) toRem(38);
+					@include Button_1;
+					color: #fff;
 				}
 			}
 

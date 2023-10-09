@@ -2,3 +2,8 @@
 .vi-slogan__subtitle{
 	@include Caption_1;
 }
+.vi-whychooseus{
+	&__picmobile{
+		top: - toRem(439);
+	}
+}

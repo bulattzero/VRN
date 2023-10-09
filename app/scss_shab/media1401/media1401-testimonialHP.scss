@@ -2,6 +2,20 @@
 	padding: 0 toRem(16);
 	.vi-testemonial {
 		height: 1220px;
+
+		&__item{
+			.vi-slogan{
+				&__subtitle{
+					@include Caption_1;
+	
+				}
+				&__tittle{
+					@include Heading_2;
+	
+				}
+			}
+		}
+
 		.vi-graphics {
 		
 			transform: scale(0.9);

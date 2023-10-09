@@ -5,7 +5,7 @@
 			display: none;
 		}
 		&__shining-mobile {
-			filter: blur 55px ;
+			filter: blur(55px);
 			top: toRem(125);
 		}
 	}

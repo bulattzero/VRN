@@ -14,48 +14,7 @@
 			top: toRem(365);
 		}
 	}
-	.vi-subscribe {
-		border-radius: toRem(4);
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: toRem(31) toRem(13);
-		&__item {
-			width: 100%;
-		}
-		&__item:nth-child(1) {
-			text-align: center;
-			font-size: toRem(28);
-			letter-spacing: - toRem(0.14);
-		}
-		&__item:nth-child(2) {
-			padding: toRem(27) 0 toRem(26) 0;
-			justify-content: center;
-		}
-		&__container {
-			border-radius: toRem(2);
-		}
-		&__inner {
-			padding: toRem(14) 0 toRem(14) toRem(14);
-			gap: toRem(8);
-			input {
-				margin: 0 toRem(2) 0 0;
-				font-size: toRem(18);
-				line-height: toRem(28);
-			}
-			input:focus {
-				outline: none;
-				border: none;
-			}
-			input::placeholder {
-				font-size: toRem(18);
-				line-height: toRem(28);
-			}
-		}
-		&__button {
-			padding: toRem(16.667);
-		}
-	}
+
 	.vi-overview {
 		padding-bottom: toRem(150);
 		flex-direction: column;
@@ -157,6 +116,8 @@
 		margin-top: toRem(34);
 	}
 }
+
+@import"../scss_shab/media769/media769-PART_subscribe.scss";
 
 @media (min-width:320px) and (max-width:429px) {
 	.vi-ourarticles {

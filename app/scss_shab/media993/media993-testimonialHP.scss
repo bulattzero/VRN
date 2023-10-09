@@ -1,6 +1,20 @@
 .vi-wrappers{
 	padding: 0 toRem(16);
 	.vi-testemonial {
+
+		&__item{
+			.vi-slogan{
+				&__subtitle{
+					@include Caption_1;
+	
+				}
+				&__tittle{
+					@include Heading_2;
+	
+				}
+			}
+		}
+
 		.vi-graphics {
 			padding-top: toRem(1300);
 			transform: scale(0.7);

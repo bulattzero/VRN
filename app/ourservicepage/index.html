@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+	{% set title="VRNas Our Service" %}
+	{% set keywords="Virtual Reality, Virtual Stuff, Virtual Games" %}
+	{% set description="Virtual Reality" %}
+	{% set script1="../js/jquery-3.4.1.min.js" %}
+	{% set script2="../js/lazyload.min.js" %}
+	{% set script3="../js/slick.min.js" %}
+	{% set script4="../js/script.js" %}
+	{% include 'head.html' %}
+	
+<body>
+	<div class="vi-wrapper">
+		<div class="vi-wrapper__background">
+			<div class="vi-wrapper__desktopbg">
+				<img class="lazy" data-src="@img/Uptucha.jpg" alt="Uptucha" width="736" height="353" />
+			</div>
+			<div class="vi-wrapper__mobilebg">
+				<img class="lazy" data-src="@img/Uptucha_mob.jpg" alt="Uptucha" width="430" height="206" />
+			</div>
+		</div>
+		<!-- Section Header begin -->
+		{%set optionalClass3="vi-menu__item--current" %}
+		{% include 'header.html' %}
+	</div>
+	<!-- Header end -->
+	<main>
+		<!-- Section Navigation begin -->
+		<div class="vi-wrapper">
+			{% set tittleTxT="Our Service" %}
+			{% set Link1="/" %}
+			{% set tittleLink1="Home" %}
+			{% set Link2="/ourservicepage/" %}
+			{% set tittleLink2="Our Service" %}
+			{% include 'vr-navigationOT.html' %}
+		</div>
+		<!-- Navigation end -->
+	
+	
+	<!-- Section Ourservice begin -->
+
+	<div class="vi-wrapper">
+			
+		{% include 'vr-ourserviceAP.html' %}
+	</div>
+	<!-- Ourservice end -->
+	
+	<!-- Section Ourpricing begin -->
+	<div class="vi-wrapper">
+		
+		{% include 'vr-ourpricingHP.html' %}
+	</div>
+	<!-- Section Ourpricing end -->
+
+	<!-- Section Testemonial begin -->
+	<div class="vi-wrappers">
+			
+		{% include 'vr-testemonialHP.html' %}
+
+		{% include 'template_subscribe.html' %}
+	</div>
+	<!-- Section Testemonial end -->
+
+	
+	</main>
+	<div class="vi-wrapper">
+	
+		<!-- Section footer begin -->
+		{% include 'footer.html' %}
+		
+		<div class="vi-wrapper__background-footer">
+			<div class="vi-wrapper__container">
+					<div class="vi-wrapper__deskt-top-bg">
+						<img class="lazy" data-src="@img/Uptucha2.jpg" alt="Uptucha2" width="1011" height="498" >
+					</div>
+					<div class="vi-wrapper__mob-bg">
+						<img class="lazy" data-src="@img/Uptucha2__mob.jpg" alt="Uptucha2" width="637" height="314" >
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

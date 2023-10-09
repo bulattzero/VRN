@@ -321,6 +321,40 @@ $('.vi-asset__item').on('click', function () {
 });
 
 
+// $('.vi-faq__item').on('click', function () {
+	
+// 	$('.vi-faq__item').removeClass('vi-faq__item--active');
+
+	
+// 	$(this).addClass('vi-faq__item--active');
+// });
+
+
+// $('.vi-faq__item').on('click', function () {
+// 	// Перевіряємо, чи має обраний елемент клас 'vi-faq__item--active'
+// 	if ($(this).hasClass('vi-faq__item--active')) {
+// 	  // Якщо має, то видаляємо цей клас
+// 	  $(this).removeClass('vi-faq__item--active');
+// 	} else {
+// 	  // Якщо не має, то додаємо цей клас і видаляємо його з інших елементів
+// 	  $('.vi-faq__item').removeClass('vi-faq__item--active');
+// 	  $(this).addClass('vi-faq__item--active');
+// 	}
+// 	});
+
+$('.vi-faq__item').on('click', function () {
+	// Перевіряємо, чи має обраний елемент клас 'vi-faq__item--active'
+	if ($(this).hasClass('vi-faq__item--active')) {
+	  // Якщо має, то видаляємо цей клас
+	  $(this).removeClass('vi-faq__item--active');
+	} else {
+	  // Якщо не має, то додаємо цей клас до обраного елемента
+	  $(this).addClass('vi-faq__item--active');
+	}
+  
+	// Тут можна додати код для запуску анімації
+  });
+
 });
 
 

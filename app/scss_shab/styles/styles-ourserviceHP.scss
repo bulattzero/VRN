@@ -3,6 +3,33 @@ h7{
 	color:#FFF ;
 }
 .vi-ourservice{
+	.vi-button {
+		background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+	
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.vi-slogan{
+		display: flex;
+		flex-direction: column;
+		&__description{
+			color:  #D1D1D1;
+
+		}
+		&__tittle{
+			color:  #FFF;
+		}
+		&__subtitle{
+			color: #0CBAF1;
+			display: block;
+		}
+	}
 	
 
 	.vi-graphics{
@@ -12,7 +39,7 @@ h7{
 			height: 454px;
 			transform: rotate(-90deg);
 			background:  linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%);
-			filter: blur(toRem(105));
+			filter: blur(105px);
 			position: absolute;
 			right: 0;
 			
@@ -39,6 +66,7 @@ h7{
 				width: 625px
 	
 			}
+			
 		}
 
 	}

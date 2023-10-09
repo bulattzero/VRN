@@ -31,14 +31,17 @@ const buildfolder = './dist';
 const srcFolder = './app';
 const rootFolder= nodePath.basename(nodePath.resolve());
 const font = series(otfToTtf, ttfToWoFF , fontsStyle );// три задачи в одной (для шрифтов) выполняются одна за одной -последовательно
-const stylesall=parallel(styles, stylesfirstpage, ); // 
-const htmlall=series(html, htmlfirstpage, );// 
+const stylesall=parallel(styles, stylesfirstpage, stylessecondpage,); // 
+const htmlall=series(html, htmlfirstpage, htmlsecondpage,);// 
 const repair=series(copyjs,copyimg,); //copyfonts
 const image=series(images,imageshtml);
 const pxToRem = require('gulp-px2rem-converter');
 const { reload } = require('browser-sync');
 const server =parallel(browsersync, watching);
 const construct=parallel(stylesall,htmlall);
+
+const removeEmptyLines = require('gulp-remove-empty-lines');
+const beautify = require('gulp-html-beautify');
 
 
 // Нужно для работы:конвертации и записывании шрифтов в файл fonts.scss-и только для этой опции
@@ -212,7 +215,23 @@ async function copyimg(done){
 	.pipe(dest('app/src/aboutuspage/'))
 	// .pipe (browserSync.stream()) // отключено за ненадобностью
 }
- 
+async function stylessecondpage () {
+	return src ([
+		'app/ourservicepage/style.scss',
+		'app/ourservicepage/media769.scss',
+		'app/ourservicepage/media993.scss',
+		'app/ourservicepage/media1201.scss',
+		'app/ourservicepage/media1401.scss',
+		'app/ourservicepage/media1402.scss',
+	])
+	.pipe(sourcemaps.init())
+	//.pipe(pxToRem())
+	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
+	.pipe(scss({outputStyle: 'expanded'}))
+	.pipe(sourcemaps.write())
+	.pipe(dest('app/src/ourservicepage/'))
+	// .pipe (browserSync.stream()) // отключено за ненадобностью
+}
 
 // Функция слежения за изменнениями в проекте+какие действия(функции) должны выполнятся
 // если что-то изменияться в папке исходников.
@@ -222,11 +241,13 @@ async function watching(){
 		'app/scss_shab/**/*.scss',
 		'app/homepage/*.scss',
 		'app/aboutuspage/*.scss',
+		'app/ourservicepage/*.scss',
 
 		
 		'app/html/*.html',
 		'app/homepage/*.html',
 		'app/aboutuspage/*.html',
+		'app/ourservicepage/*.html',
 		
 	], 	series ( construct,copyimg, copyjs,) ) ;//backupfonts //,transfercleanDist,
 	// watch (['app/js/*.js'], series (backupfonts,cleanDist,image, scripts, construct, repair),watch) .on('change',browserSync.reload) ;
@@ -333,6 +354,12 @@ function cleanDist(){
 	 .pipe(replace(/@img\//g,'img/')) // заменяет в html @img на img/
 	 .pipe(replace(/@img_html\//g,'img_html/')) // заменяет в html @img на img_html/
 	 .pipe(webpHtmlNosvg())
+	 .pipe(removeEmptyLines())//Удаляем пустые линии
+	 .pipe(beautify({
+		indent_size: 4,  // Розмір відступу (2 пробіли)
+		indent_char: ' ', // Символ відступу (пробіл)
+		preserve_newlines: false, // Видалити порожні рядки
+	  }))
 	 .pipe(
 		versionNumber({
 			'value': '%DT%',
@@ -377,6 +404,12 @@ function cleanDist(){
 	 .pipe(replace(/@img\//g,'../img/')) // заменяет в html @img на img/
 	 .pipe(replace(/@img_html\//g,'../img_html/')) // заменяет в html @img на img_html/
 	 .pipe(webpHtmlNosvg())
+	 .pipe(removeEmptyLines())//Удаляем пустые линии
+	 .pipe(beautify({
+		indent_size: 4,  // Розмір відступу (2 пробіли)
+		indent_char: ' ', // Символ відступу (пробіл)
+		preserve_newlines: false, // Видалити порожні рядки
+	  }))
 	 .pipe(
 		versionNumber({
 			'value': '%DT%',
@@ -397,6 +430,53 @@ function cleanDist(){
 	 .pipe(dest('app/src/aboutuspage'))
 }
 
+function htmlsecondpage(){
+	return src([
+		// 'app/firstpage/css/*.css',
+		// 'app/firstpage/*.*',
+		'app/ourservicepage/*.html',
+	])
+	 .pipe(plumber( // ОТЛАВЛИВАЕТ ОШИБКИ И ВЫВОДИТ В ВИНДУ ОШИБКУ В УВЕДОМЛЕНИЯ
+		notify.onError({
+			title:"HTML",
+			message: "Error: <%= error.message%>"
+		})
+	))
+	// .pipe(fileinclude({ // СКЛЕЙКА ФАЙЛОВ HTML
+    //   prefix: '@@',
+    //   basepath: '@file'
+    // }))
+	.pipe(nunjucksRender({
+		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
+	  }))
+	 .pipe(replace(/@img\//g,'../img/')) // заменяет в html @img на img/
+	 .pipe(replace(/@img_html\//g,'../img_html/')) // заменяет в html @img на img_html/
+	 .pipe(webpHtmlNosvg())
+	 .pipe(removeEmptyLines())//Удаляем пустые линии
+	 .pipe(beautify({
+		indent_size: 4,  // Розмір відступу (2 пробіли)
+		indent_char: ' ', // Символ відступу (пробіл)
+		preserve_newlines: false, // Видалити порожні рядки
+	  }))
+	 .pipe(
+		versionNumber({
+			'value': '%DT%',
+			'append': {
+				'key': '_v',
+				'cover': 0,
+				'to':[
+					'css',
+					'js',
+				]
+			
+		},
+		'output': {
+			'file':'gulp/version.json'
+		}
+		})
+	 )
+	 .pipe(dest('app/src/ourservicepage'))
+}
 
 // ОБРАБОТКА СТРАНИЦ И ПАПОК
 
@@ -427,10 +507,12 @@ exports.copyimg = copyimg;
 exports.copyjs = copyjs;
 exports.styles = styles;
 exports.stylesfirstpage = stylesfirstpage;
+exports.stylessecondpage = stylessecondpage;
 exports.stylesall = stylesall;
 exports.watching = watching;
 exports.html = html;
 exports.htmlfirstpage = htmlfirstpage;
+exports.htmlsecondpage = htmlsecondpage;
 exports.htmlall =htmlall;
 exports.images = images;
 exports.imageshtml=imageshtml;
@@ -493,19 +575,37 @@ async function stylesup () {
 // ПОСТРОЕНИЕ СТИЛЕЙ КАТАЛОГА
 async function stylesfirstpageup () {
 	return src ([
-		'app/firstpage/style.scss',
-		'app/firstpage/media769.scss',
-		'app/firstpage/media993.scss',
-		'app/firstpage/media1201.scss',
-		'app/firstpage/media1401.scss',
-		'app/firstpage/media1402.scss',
+		'app/aboutuspage/style.scss',
+		'app/aboutuspage/media769.scss',
+		'app/aboutuspage/media993.scss',
+		'app/aboutuspage/media1201.scss',
+		'app/aboutuspage/media1401.scss',
+		'app/aboutuspage/media1402.scss',
 	])
 	// .pipe(sourcemaps.init())
 	//.pipe(pxToRem())
 	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
 	.pipe(scss({outputStyle: 'compressed'}))
 	// .pipe(sourcemaps.write())
-	.pipe(dest('app/src2/firstpage/'))
+	.pipe(dest('app/src2/aboutuspage/'))
+	// .pipe (browserSync.stream()) // отключено за ненадобностью
+}
+
+async function stylessecondpageup () {
+	return src ([
+		'app/ourservicepage/style.scss',
+		'app/ourservicepage/media769.scss',
+		'app/ourservicepage/media993.scss',
+		'app/ourservicepage/media1201.scss',
+		'app/ourservicepage/media1401.scss',
+		'app/ourservicepage/media1402.scss',
+	])
+	// .pipe(sourcemaps.init())
+	//.pipe(pxToRem())
+	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
+	.pipe(scss({outputStyle: 'compressed'}))
+	// .pipe(sourcemaps.write())
+	.pipe(dest('app/src2/ourservicepage/'))
 	// .pipe (browserSync.stream()) // отключено за ненадобностью
 }
 
@@ -552,13 +652,14 @@ async function transferup2(){
 
 
 
-const up=series(stylesup,stylesfirstpageup,transferup,transferup2)
+const up=series(stylesup,stylesfirstpageup,stylessecondpageup,transferup,transferup2)
 
 
 
 
 exports.stylesup=stylesup;
 exports.stylesfirstpageup=stylesfirstpageup;
+exports.stylessecondpageup=stylessecondpageup;
 exports.transferup=transferup;
 exports.transferup2=transferup2;
 exports.up=up;

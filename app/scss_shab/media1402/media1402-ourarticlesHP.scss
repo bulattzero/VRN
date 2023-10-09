@@ -12,45 +12,7 @@
 	&__item {
 		padding-bottom: toRem(72);
 	}
-	.vi-subscribe{
-		border-radius: toRem(4);
-		align-items: center;
-		padding: toRem(38) toRem(74) toRem(31) toRem(74);
-		&__item{
-			width: 50%;
-		}
-		&__item:nth-child(1){
-			font-size: toRem(40);
-			line-height: toRem(58); 
-			letter-spacing: - toRem(0.2);
-		}
-		&__item:nth-child(2){
-			padding: toRem(27)  0 toRem(26) 0;
-			
-		}
-		&__container{
-			border-radius: toRem(2);
-		}
-		&__inner{
-			padding: toRem(14) 0 toRem(14) toRem(14);
-			gap: toRem(8);
 
-			input{
-				margin: 0 toRem(2) 0 0;
-				font-size: toRem(18);
-				line-height: toRem(28);
-			}
-		
-			  input::placeholder{
-				font-size: toRem(18);
-				line-height: toRem(28);
-			  }
-		}
-		&__button{
-			padding: toRem(16.667);
-			
-		}
-	}
 	.vi-overview{
 		padding-bottom: toRem(150);
 		&__item:nth-child(1){
@@ -160,3 +122,4 @@
   
 
 }
+@import"../scss_shab/media1402/media1402-PART_subscribe.scss";

@@ -30,6 +30,9 @@
 	}
 	&__item:nth-child(1){
 		.vi-slogan {
+			&__subtitle{
+				display: block;
+			}
 			&__description {
 				width: 625px;
 			}

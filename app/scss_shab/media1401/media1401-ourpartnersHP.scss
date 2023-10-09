@@ -1,6 +1,11 @@
 .vi-ourpartners {
 	padding: toRem(100) 0;
 	height: 1200px;
+
+	.vi-slogan{
+		gap: toRem(12);
+	}
+
 	&__inner {
 	
 		margin-bottom: toRem(58);

@@ -1,0 +1,19 @@
+.vi-statistic {
+	
+	gap: toRem(200);
+	
+	&__item {
+		
+		gap: toRem(12);
+		
+}
+&__tittle {
+
+	@include Caption_1;
+	
+}
+&__number {
+	@include Heading_2;
+	
+}
+}

@@ -4,6 +4,24 @@ h7{
 }
 .vi-ourservice{
 	padding: toRem(150) 0 ;
+
+	.vi-slogan{
+		gap: toRem(12);
+	
+			
+			&__description{
+				@include Body_1;
+	
+			}
+			&__tittle{
+				@include Heading_4;
+			}
+			&__subtitle{
+				@include Caption_1;
+			}
+		
+	}
+
 	.vi-graphics{
 		&__shining-desktop{
 			top: - toRem(150);
@@ -38,6 +56,7 @@ h7{
 		padding: toRem(38) toRem(39) toRem(25) toRem(32);
 		.vi-button{
 			padding: toRem(18) toRem(38);
+			@include Button_1;
 		}
 
 	}
@@ -65,3 +84,5 @@ h7{
 
 	
 }
+
+

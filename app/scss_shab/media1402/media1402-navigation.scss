@@ -1,7 +1,7 @@
 .vi-navigation {
 	.vi-graphics {
 		&__shining-desktop {
-			filter: blur  55px;
+			filter: blur(55px);
 			top: toRem(125);
 		}
 		&__shining-mobile {
