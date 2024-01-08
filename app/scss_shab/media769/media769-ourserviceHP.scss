@@ -1,0 +1,127 @@
+
+h7{
+	
+@include Heading_7;
+
+	
+
+}
+.vi-ourservice{
+	padding: toRem(100) 0 ;
+	.vi-slogan{
+		gap: toRem(12);
+	
+			
+			&__description{
+				@include Body_1;
+				padding-top: toRem(12);
+	
+			}
+			&__tittle{
+				@include Heading_5;
+			}
+			&__subtitle{
+				@include Caption_1;
+			}
+		
+	}
+
+	.vi-graphics{
+			display: none;
+		&__shining-desktop{
+			
+			top: - toRem(150);
+			;
+			margin: 0 toRem(100)
+		}
+		
+	}
+
+	
+	&__item:nth-child(1){
+		
+		flex-direction: column;
+		
+		.vi-slogan{
+
+	
+			&__description{
+				width: 100%;
+				@include Body_1;
+	
+			}
+			&__subtitle {
+				@include Caption_1;
+			}
+		}
+
+	}
+	&__item:nth-child(2){
+
+		padding: toRem(46) 0;
+	}
+
+	&__box{
+		width: 100%;
+		padding: toRem(38) toRem(39) toRem(25) toRem(32);
+		gap: toRem(58);
+		.vi-button{
+			@include Button_1;
+			padding: toRem(18) toRem(38);
+			
+		}
+
+	}
+	
+	
+	
+    &__container{
+		padding: toRem(74) 0 toRem(28);
+	}
+
+	
+}
+
+
+@media (min-width:550px) and (max-width:769px){
+	.vi-ourservice{
+		&__box{
+			width: 49%;
+			
+	
+		}
+		&__box:nth-child(2){
+			top: toRem(57);
+	
+		}
+		&__box:nth-child(6){
+			top: toRem(57);
+	
+		}
+		&__box:nth-child(4){
+			top: toRem(57);
+	
+		}
+		
+	}
+}
+
+@media (min-width:320px) and (max-width:429px){
+
+	.vi-ourservice {
+	&__item1{
+		.vi-slogan {
+	
+			&__description {
+				font-size: toRem(12);
+				
+	
+			}
+		}
+
+	}
+	
+	
+
+}
+}

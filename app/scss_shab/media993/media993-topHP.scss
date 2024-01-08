@@ -1,0 +1,136 @@
+h1{
+	@include Heading_2;
+}
+
+.vi-top{
+	
+
+	.vi-graphics{
+		position: relative;
+		&__background{
+			position: absolute;
+			left: - toRem(120);
+			top: toRem(85);
+			height: 705px;
+			width: 100%;
+			background-repeat: no-repeat;
+	
+		
+	
+		}
+		 
+		&__shining-desktop{
+			
+			display: none;
+		}
+		
+		&__shining-mobile{
+			transform: rotate(90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%) ;
+			position: absolute;
+			top: toRem(300);
+			right: 0;
+			filter: blur(105px);
+			width: 229px;
+			height: 382px;
+			display: block;
+			margin: 0 toRem(61);
+
+			}
+		}
+
+	
+	
+
+	
+
+	
+	&__item:nth-child(1){
+		width: 60%;
+		position: relative;
+		.vi-slogan{
+			&__tittle {
+		
+				width: 540px;
+			}
+			&__description{
+				@include Body_1;
+				width: 446px;
+				margin-bottom: toRem(32);
+				
+			}
+			&__low{
+				margin-top: toRem(81);
+		
+			}
+	
+
+		}
+
+
+		
+		
+	}
+	&__item:nth-child(2){
+		
+		
+		padding: toRem(310) 0 0 0
+		
+	}
+	
+	
+	
+}
+.vi-button {
+	padding: toRem(18) toRem(38);
+	@include Button_1;
+}
+.vi-happyclient{
+	gap: toRem(75);
+	flex-direction: column;
+	&__box{
+		gap: toRem(18);
+	}
+
+	&__number{
+		span{
+			font-size: toRem(16);
+			line-height: toRem(28);
+			margin-right: toRem(10);
+
+		}
+		
+
+	}
+	
+
+
+
+}
+.vi-slogan{
+
+	gap: toRem(12);
+	&__subtitle{
+		@include Caption_1;
+	}
+
+
+
+	
+}
+.vi-chooseus{
+	padding: toRem(42) toRem(65) toRem(53) toRem(53) ;
+	gap: toRem(50);
+
+	
+
+	&__tittle{
+		margin-top: toRem(42);
+		@include Heading_7;
+	}
+	&__description{
+		margin-top: toRem(12);
+		@include Body_2;
+
+	}
+}

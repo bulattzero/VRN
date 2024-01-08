@@ -1,0 +1,60 @@
+body {
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 300;
+	line-height: toRem(28);
+}
+
+.vi-wrapper {
+	padding: 0 toRem(30);
+
+	.vi-headcontainer {
+		padding: toRem(25) 0;
+	}
+	&__desktopbg{
+		display: block;
+
+	}
+	&__mobilebg{
+		display: none;
+
+	}
+	&__deskt-top-bg{
+		display: block;
+
+	}
+	&__mob-bg{
+		display: none;
+
+	}
+}
+
+.vi-headers {
+	&__hamburger{
+		display: none;
+	}
+	&__contactbutton{
+		padding: toRem(12) toRem(24);
+		@include Button_2;
+	}
+}
+
+.vi-menu {
+	&__top {
+		gap: toRem(40);
+		@include Button_3;
+	}
+
+	&__item {
+		gap: toRem(4);
+	}
+}
+
+
+
+
+
+
+
+
+

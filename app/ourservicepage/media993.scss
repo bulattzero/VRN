@@ -1,0 +1,44 @@
+:root,
+html {
+	font-size: 14px;
+}
+
+/* MIXINS*/
+
+@import"../scss_shab/mixins.scss";
+
+@function toRem($value) {
+	$remValue: calc($value / 14) + rem; 
+	@return $remValue;
+}
+
+/* HEADER*/
+@import"../scss_shab/media993/media993-headerHP.scss";
+
+/* Navigation*/
+@import"../scss_shab/media993/media993-navigation.scss";
+
+
+
+/*Ourservice*/
+
+@import"../scss_shab/media993/media993-ourserviceAP.scss";
+
+
+
+
+/*Ourpricing*/
+
+@import"../scss_shab/media993/media993-ourpricingHP.scss";
+
+
+/*Testimonial*/
+
+@import"../scss_shab/media993/media993-testimonialAP.scss";
+
+
+/* FOOTER*/
+@import"../scss_shab/media993/media993-footerHP.scss";
+
+
+

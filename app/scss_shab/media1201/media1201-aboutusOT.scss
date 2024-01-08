@@ -1,0 +1,56 @@
+@import"../scss_shab/media1201/media1201-aboutusHP.scss";
+.vi-aboutus{
+	.vi-graphics{
+		&__background {
+			top: 23px;
+			right: toRem(45);
+		}
+		&__shining-desktop{
+			right: toRem(80);
+			margin-right: toRem(80);
+			margin-left: unset;
+			
+		}
+
+	}
+	&__pic{
+			right: toRem(45);
+			top: -55px;
+			left: unset;
+		
+	}
+	&__picmobile{
+		top: -57px;
+    	right: 45px;
+	}
+	
+	&__item:nth-child(1){
+		width: 40%;
+	}
+	&__item:nth-child(2){
+		width: 60%;
+		.vi-slogan{
+			&__tittle{
+				width: 100%;
+			}
+			&__description{
+				width: 100%;
+			}
+			&__list{
+				display: none;
+			}
+		}
+		.vi-button{
+			display: none;
+		}
+	}
+	&__video{
+		right: 300px;
+	}
+	&__videomobile{
+	
+		right: toRem(180);
+		bottom: - toRem(23);
+
+	}
+}

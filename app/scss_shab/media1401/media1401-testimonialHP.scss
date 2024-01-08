@@ -1,0 +1,144 @@
+.vi-wrappers{
+	padding: 0 toRem(16);
+	.vi-testemonial {
+		height: 1220px;
+
+		&__item{
+			.vi-slogan{
+				&__subtitle{
+					@include Caption_1;
+	
+				}
+				&__tittle{
+					@include Heading_2;
+	
+				}
+			}
+		}
+
+		.vi-graphics {
+		
+			transform: scale(0.9);
+			padding: toRem(1360) 0 toRem(60) 0;
+	
+			&__shining-desktop {
+				filter: blur(toRem(105));
+			}
+		}
+	
+		.vi-elipse {
+			&__first {
+				padding: toRem(82);
+			}
+	
+			&__second {
+				padding: toRem(93);
+			}
+	
+			&__third {
+				padding: toRem(82);
+			}
+	
+			&__fourth {
+				padding: toRem(86);
+			}
+	
+			&__fifth {
+				padding: toRem(83);
+			}
+	
+			&__six {
+				.vi-animation{
+					top: - toRem(231);
+					right: - toRem(144);
+				
+					&__shine{
+						filter: blur(toRem(10));
+					}
+					.vi-response{
+						&__text{
+							font-size: toRem(12);
+							line-height: toRem(20)
+						}
+						&__creator{
+							font-size: toRem(12);
+							line-height: toRem(24);
+							margin-top: toRem(8);
+						}
+					}
+
+					&__item:nth-child(1){
+						padding: toRem(11);
+						
+					}
+					&__item:nth-child(2){
+						padding: toRem(11);
+					}
+					&__item:nth-child(3){
+						padding: toRem(11);
+					}
+					&__item:nth-child(4){
+						padding: toRem(11);
+					}
+					&__item:nth-child(5){
+						padding: toRem(11);
+					}
+					&__item:nth-child(6){
+						padding: toRem(11);
+					}
+					&__item:nth-child(7){
+						padding: toRem(18) toRem(19);
+						left: - toRem(120);
+					}
+					&__item:nth-child(8){
+						padding: toRem(18) toRem(19);
+						left: - toRem(111);
+						top: - toRem(20);
+					}
+					&__item:nth-child(9){
+						padding: toRem(18) toRem(19);
+						left: - toRem(111);
+						top: - toRem(20);
+					}
+					&__item:nth-child(10){
+						padding: toRem(18) toRem(19);
+						left: - toRem(111);
+						top: - toRem(20);
+					}
+					&__item:nth-child(11){
+						padding: toRem(18) toRem(19);
+						left: - toRem(111);
+						top: - toRem(20);
+					}
+					&__item:nth-child(12){
+						padding: toRem(18) toRem(19);
+						left: - toRem(111);
+						top: - toRem(20);
+					}
+				}
+			}
+	
+			&__pic {
+
+				left: - toRem(109);
+				top: - toRem(81);
+			}
+	
+		}
+
+		&__item:nth-child(1) {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			top: 0;
+			text-align: center;
+	
+		}
+		&__item:nth-child(2){
+			margin-bottom: - toRem(190)
+		}
+		
+	}
+
+}
+

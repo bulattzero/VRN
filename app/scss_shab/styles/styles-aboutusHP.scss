@@ -1,0 +1,149 @@
+h2{
+	
+	color:  #FFF;
+}
+.vi-graphics{
+		&__background{
+			
+			width: 398.938px;
+			height: 496.528px;
+			background: #252532;
+		}
+		&__shining-desktop{
+			
+			width: 364.621px;
+			height: 608.059px;
+			transform: rotate(-90deg);
+			flex-shrink: 0;
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(105px);
+
+		}
+		&__shining-mobile{
+			
+			width: 274px;
+			height: 429px;
+			transform: rotate(-90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(78.96149444580078px);
+
+		}
+
+}
+
+.vi-aboutus{
+	&__video{
+		position: absolute;
+	}
+	&__inner{
+		display: flex;
+
+	
+	}
+	&__item:nth-child(1){
+		position: relative;
+		width: 50%;
+	
+
+	}
+	&__item:nth-child(2){
+		position: relative;
+		width: 50%;
+		.vi-slogan{
+			&__tittle{
+				width: 562px;
+			}
+			&__description{
+				width: 528px;
+				color: #d1d1d1;
+				display: block;
+
+			}
+			&__subtitle{
+				color: #0CBAF1;
+				display: block;
+			}
+			&__list{
+				display: flex;
+				flex-direction: column;
+
+			}
+			&__in-list{
+				display: flex;
+				align-items: center;
+				color: #FFF;
+
+			}
+		}
+
+	}
+	&__pic{
+		position: absolute;
+
+	}
+	.vi-video{
+		
+		width: 196px;
+		height: 127.936px;
+		flex-shrink: 0;
+		background: #21232e;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__playbutton {
+			position: absolute;
+			cursor: pointer;
+		}
+
+	}
+	&__picmobile{
+		position: absolute;
+		display: none;
+
+	}
+	&__videomobile{
+		position: absolute;
+		
+
+	}
+	.vi-videomobile{
+		width: 147.395px;
+		height: 96.209px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #21232e;
+		&__playbutton {
+			position: absolute;
+		}
+	}
+	
+
+	.vi-graphics{
+		position: relative;
+
+
+		&__background{
+			position: absolute;
+		
+		}
+		&__shining-desktop{
+			position: absolute;
+			
+
+		}
+		&__shining-mobile{
+			display: none;
+			width: 274px;
+			height: 429px;
+			transform: rotate(-90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.50) 0%, rgba(254, 105, 254, 0.50) 100%);
+			filter: blur(78.96149444580078px);
+
+		}
+	}
+
+	
+
+}
+.freehosting-2domains-link { display: none; }

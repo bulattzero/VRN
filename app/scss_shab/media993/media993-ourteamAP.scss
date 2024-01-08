@@ -1,0 +1,62 @@
+.vi-ourteam {
+	padding: toRem(100) 0;
+	&__item {
+		.vi-ourteam-card{
+			background-position: center;
+			background-size: unset;
+			&__item{
+				padding-top: toRem(300);
+			}
+			&__tittle{
+				@include Heading_10;
+				color: #FFF;
+			}
+			&__subtittle{
+				@include Body_4;
+				color: #FFF;
+			}
+		}
+	}
+
+	.vi-slogan {
+		
+		gap: toRem(12);
+		&__subtitle {
+			color: #0CBAF1;
+			display: block;
+			width: fit-content;
+			margin: 0px auto;
+
+		}
+
+		&__tittle {
+			position: relative;
+			width: fit-content;
+			margin: 0px auto;
+
+		}
+	}
+
+	.vi-ourteam-box {
+		flex-direction: column-reverse;
+		&__button {
+			padding: toRem(18) toRem(38);
+			@include Button_1;
+			top:  toRem(32);
+			margin: 0px auto;
+			}
+			&__inner {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 5px;
+			}
+	
+			&__item {
+				width: 49%;
+				padding: toRem(9);
+			}
+		}
+
+		
+
+	}

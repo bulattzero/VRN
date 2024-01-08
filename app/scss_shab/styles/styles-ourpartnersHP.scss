@@ -1,0 +1,75 @@
+.vi-ourpartners {
+	height: 1000px;
+	&__inner {
+		text-align: center;
+	}
+	&__item{
+		.vi-slogan__subtitle{
+			display: block;
+		}
+	}
+	.vi-graphics {
+    	position: relative;
+		&__shining-desktop {
+			width: 272px;
+			height: 618px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		.vi-elipse {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			&__item {
+				width: 102px;
+				height: 102px;
+				border-radius:50% ;
+				background: rgba(37, 37, 50, 0.80);
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			&__first {
+				width: 1055px;
+				height: 541px;
+				background-repeat: no-repeat;
+				margin: 0px auto;
+			
+			}
+			&__second {
+				width: 100%;
+				height: 472px;
+				background-repeat: no-repeat;
+			}
+			&__third {
+				width: 100%;
+				height: 394px;
+				background-repeat: no-repeat;
+			}
+			&__fourth {
+				width: 100%;
+				height: 326px;
+				background-repeat: no-repeat;
+			}
+			&__six {
+				width: 452.944px;
+				height: 452.944px;
+				flex-shrink: 0;
+				border-radius: 452.944px;
+				border: 1.164px solid rgba(255, 255, 255, 0.17);
+				background: #333751;
+				background-repeat: no-repeat;
+				position: relative;
+			}
+			&__pic {
+				position: relative;
+			
+			}
+		}
+	}
+
+}

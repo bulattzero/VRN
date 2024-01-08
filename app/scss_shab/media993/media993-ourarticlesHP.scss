@@ -1,0 +1,113 @@
+.vi-ourarticles {
+	padding-bottom: toRem(67);
+	.vi-graphics {
+		&__backgroundimg {
+			margin-left: - toRem(205);
+			top: toRem(365);
+		}
+	}
+	&__item {
+		padding-bottom: toRem(72);
+	}
+
+	.vi-overview {
+		padding-bottom: toRem(150);
+		flex-direction: column;
+		gap: toRem(80);
+		&__item:nth-child(1) {
+			width: 100%;
+		}
+		&__item:nth-child(2) {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+		&__button {
+			font-size: toRem(14);
+			letter-spacing: toRem(1.5);
+			padding: toRem(18) toRem(38);
+			top: toRem(65);
+		}
+		&__item {
+			.vi-recent-box {
+				padding: toRem(32) toRem(72) toRem(32) toRem(97);
+				gap: toRem(32);
+				&__inner {
+					display: flex;
+					flex-direction: column;
+					gap: toRem(32);
+				}
+				&__name {
+					font-size: toRem(28);
+					letter-spacing: - toRem(0.14);
+					width: auto;
+					margin: 0 auto;
+				}
+				&__item {
+					padding-bottom: toRem(32);
+					margin-right: toRem(46);
+				}
+				&__flex {
+					gap: toRem(13);
+				}
+				&__image {
+					margin-right: toRem(7);
+				}
+				&__badge {
+					gap: toRem(8);
+				}
+				&__tittle {
+					padding: toRem(2) toRem(10);
+					border-radius: toRem(16);
+					font-size: toRem(14);
+					line-height: toRem(20);
+				}
+				&__description {
+					font-size: toRem(18);
+				}
+				.vi-next-button {
+					padding: toRem(13.333);
+				}
+			}
+			.vi-popular-box {
+				gap: toRem(32);
+				padding-top: toRem(83);
+				&__name {
+					font-size: toRem(28);
+					letter-spacing: - toRem(0.14);
+					width: auto;
+					margin: 0 auto;
+				}
+				&__item {
+					padding: toRem(281) toRem(24) toRem(24) toRem(24);
+					width: 90%;
+					margin: 0 auto;
+				}
+				&__flex {
+					gap: toRem(29);
+				}
+				&__badge {
+					gap: toRem(12);
+				}
+				&__tittle {
+					border-radius: toRem(16);
+					padding: toRem(2) toRem(10);
+					font-size: toRem(14);
+					line-height: toRem(20);
+				}
+				&__description {
+					font-size: toRem(32);
+					letter-spacing: toRem(0.16);
+				}
+				.vi-next-button {
+					padding: toRem(16.667);
+				}
+			}
+		}
+	}
+	.slick-dots {
+		gap: toRem(12);
+		margin-top: toRem(34);
+	}
+}
+@import"../scss_shab/media993/media993-PART_subscribe.scss";

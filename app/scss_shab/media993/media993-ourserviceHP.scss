@@ -1,0 +1,85 @@
+
+h7{
+	@include Heading_7;
+}
+.vi-ourservice{
+	padding: toRem(150) 0;
+	.vi-slogan{
+		gap: toRem(12);
+	
+			
+			&__description{
+				@include Body_1;
+				padding-top: 12px
+	
+			}
+			&__tittle{
+				@include Heading_4;
+			}
+			&__subtitle{
+				@include Caption_1;
+			}
+		
+	}
+
+	.vi-graphics{
+		&__shining-desktop{
+			top: - toRem(150);
+			margin: 0 toRem(100)
+		}
+	}
+	&__item:nth-child(1){
+		
+		flex-direction: column;
+		
+		width: 60%;
+		margin: 0 auto;
+		.vi-slogan{
+			&__description{
+				width: 100%;
+				@include Body_1;
+			}
+			&__subtitle {
+				@include Caption_1;
+			}
+		}
+
+	}
+	&__item:nth-child(2){
+		padding: toRem(46) 0;
+	}
+
+	&__box{
+		width: 49%;
+		gap: toRem(58);
+		padding: toRem(38) toRem(39) toRem(25) toRem(32);
+		.vi-button{
+			
+			padding: toRem(18) toRem(38);
+			@include Button_1;
+		}
+	}
+	&__box:nth-child(2){
+		top: toRem(57);
+
+	}
+	&__box:nth-child(6){
+		top: toRem(57);
+
+	}
+	&__box:nth-child(4){
+		top: toRem(57);
+
+	}
+	
+	
+	
+    &__container{
+		
+		padding: toRem(74) 0 toRem(28);
+	}
+
+	
+}
+
+

@@ -1,0 +1,101 @@
+h1{
+	@include Heading_1;
+}
+
+.vi-top {
+	.vi-graphics {
+		&__background {
+			left: - toRem(120);
+			top: toRem(85);
+		}
+
+		&__shining-desktop {
+			margin: 0px toRem(120);
+		}
+
+		&__shining-mobile {
+			display: none;
+		}
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	
+		&__item:nth-child(1) {
+			width: 60%;
+			padding: toRem(87) 0 0 0;
+			.vi-slogan{
+				&__tittle {
+			
+					width: 540px;
+				}
+				&__description {
+					width: 446px;
+					margin-bottom: toRem(32);
+					@include Body_1;
+					
+				}
+					
+				&__low {
+						margin-top: toRem(42);
+					}
+			   }
+
+		
+	}
+
+	&__item:nth-child(2) {
+		padding: toRem(55) 0 0 0;
+	}
+}
+
+
+.vi-button {
+	padding: toRem(18) toRem(38);
+	@include Button_1;
+}
+
+.vi-happyclient {
+	gap: toRem(55);
+
+	&__box {
+		gap: toRem(18);
+	}
+
+	&__number {
+		position: relative;
+		color: #fff;
+		font-family: Chakra Petch;
+
+		span {
+			font-size: toRem(16);
+			line-height: toRem(28);
+			margin-right: toRem(10);
+		}
+	}
+}
+
+.vi-chooseus {
+	padding: toRem(42) toRem(65) toRem(53) toRem(53);
+	gap: toRem(50);
+
+	&__tittle {
+		margin-top: toRem(42);
+		@include Heading_7;
+	}
+
+	&__description {
+		margin-top: toRem(12);
+		@include Body_2;
+	}
+}
+.vi-slogan {
+	gap: toRem(12);
+	&__subtitle{
+		@include Caption_1;
+	}
+
+	
+}

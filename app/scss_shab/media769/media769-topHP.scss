@@ -1,0 +1,184 @@
+h1{
+	@include Heading_2;
+}
+
+
+
+.vi-top {
+	.vi-graphics {
+		&__backgroundimg {
+			left: - toRem(120);
+			top: toRem(85);
+		}
+
+		&__shining-desktop {
+			display: none;
+		}
+
+		&__shining-mobile {
+			display: block;
+			margin: 0 toRem(61);
+			transform: rotate(90deg);
+			background: linear-gradient(135deg, rgba(28, 196, 249, 0.80) 0%, rgba(254, 105, 254, 0.80) 100%);
+			position: absolute;
+			top: toRem(300);
+			right: 0;
+			filter: blur(105px);
+			width: 229px;
+			height: 382px;
+			
+		}
+	}
+
+	&__item {
+		width: 100%;
+		.vi-slogan {
+			display: flex;
+			flex-direction: column;
+			gap: toRem(12);
+		
+			&__description {
+				margin-bottom: toRem(32);
+				@include Body_1;
+		
+			}
+			&__subtitle{
+				@include Caption_1;
+			}
+		
+		
+		
+		
+			&__low {
+				margin-top: toRem(32);
+				position: relative;
+		
+			}
+		
+			&__pic {
+				display: block;
+				position: absolute;
+				right: - toRem(16);
+				top: toRem(46);
+			}
+		}
+		
+
+
+		
+
+	}
+
+	&__item:nth-child(2) {
+
+	
+		display: none;
+
+
+	}
+
+
+
+}
+.vi-button {
+	padding: toRem(18) toRem(38);
+	@include Button_1;
+	
+
+	
+}
+
+
+.vi-happyclient {
+	
+	flex-direction: column;
+	gap: toRem(145);
+	align-items: flex-start;
+	margin-bottom: toRem(145);
+
+	&__box {
+		
+		gap: toRem(18);
+		
+
+	}
+
+	
+
+	&__number {
+		position: relative;
+		color: #FFF;
+		font-family: Chakra Petch;
+
+		span {
+			font-size: toRem(16);
+			font-style: normal;
+			font-weight: 600;
+			line-height: toRem(28);
+			margin-right: toRem(10);
+
+		}
+
+		
+
+	}
+
+
+
+}
+
+.vi-chooseus {
+	padding: toRem(36) toRem(36);
+	flex-direction: column;
+	gap: toRem(50);
+	
+
+
+
+	&__tittle {
+		margin-top: toRem(42);
+		@include Heading_7;
+	}
+
+	&__description {
+		margin-top: toRem(12);
+		@include Body_2;
+	}
+}
+
+
+@media (min-width:320px) and (max-width:429px) {
+
+	h1{
+		font-size: toRem(34);
+	}
+
+	.vi-top {
+		
+			.vi-slogan {
+
+
+				
+
+				&__description {
+					font-size: toRem(12);
+					
+
+				}
+				
+				&__low{
+					.vi-happyclient{
+						align-items: center;
+					}
+
+				}
+				&__pic{
+					display: none;
+					
+				}
+			}
+
+		
+	}
+
+}

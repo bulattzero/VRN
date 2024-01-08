@@ -1,0 +1,38 @@
+.vi-questions {
+	gap: toRem(100);
+	.vi-slogan {
+		&__description{
+			width: 80%;
+			padding-bottom: toRem(24);
+		}
+	}
+	.vi-faq{
+		gap: toRem(24);
+	
+	&__item {
+		padding: toRem(24) ;
+		width: 90%;
+	
+	
+	}
+
+
+	&__tittle {
+		padding-bottom: 12px;
+
+	}
+
+	&__description {
+		
+		padding: toRem(12) 0 toRem(8) 0;
+		@include Body_3;
+
+	}
+
+	}
+
+	
+	
+}
+
+@import"../scss_shab/media993/media993-PART_subscribe.scss";

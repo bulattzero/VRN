@@ -1,0 +1,205 @@
+h2{
+	@include Heading_5;
+}
+.vi-ourpricing {
+	padding: toRem(100) 0 toRem(150);
+	.vi-graphics{
+		&__shining-desktop{
+			display: none;
+		}
+		&__shining-mobile{
+			filter: blur(toRem(105));
+			display: block;
+		}
+	}
+	&__inner {
+		gap: toRem(40);
+	}
+	&__item:nth-child(1){
+		.vi-slogan {
+			&__description {
+				width: 100%;
+			}
+		}
+	}
+
+	&__item:nth-child(1){
+		.vi-slogan{
+			display: flex;
+			flex-direction: column;
+			gap: toRem(12);
+			&__subtitle{
+				@include Caption_1;
+				color: #0CBAF1;
+
+			}
+
+			&__tittle{
+				
+				color: #FFF;
+
+			}
+			&__description{
+				@include Body_1;
+				color:  #D1D1D1;
+				padding-top: toRem(2);
+
+			}
+		}
+	}
+
+
+	&__item:nth-child(2){
+		.vi-benefits{
+			height: auto;
+			background: rgba(37, 37, 50, 0.81);
+			display: flex;
+			flex-direction: column;
+			&__item:nth-child(1){
+				width: 100%;
+				padding: toRem(32) toRem(22);
+			}
+		
+			&__item:nth-child(2){
+				width: 100%;
+			}
+			&__in{
+				position: relative;
+				display: flex;
+				justify-content: end;
+
+			}
+			&__li{
+				margin-bottom: toRem(32);
+			}
+			&__tittle{
+				font-size: toRem(18);
+			}
+			&__description{
+				font-size: toRem(16);
+				line-height: toRem(28); 
+			}
+			&__container{
+				gap: toRem(12);
+    			margin-left: toRem(58);
+			}
+			&__pic{
+				display: none;
+			}
+			&__pic-mobile{
+				display: block;
+
+			}
+			.vi-price{
+				padding: toRem(20) 0 toRem(18) 0 ;
+				z-index: 11;
+				bottom: - toRem(88);
+    			right: toRem(31);
+				left: auto;
+				
+				&__tittle{
+					font-size: toRem(14);
+					line-height: toRem(20); 
+				}
+				&__description{
+					font-size: toRem(60);
+					line-height: toRem(66); 
+    				margin: 0 auto toRem(14) auto;
+				}
+				&__remark{
+					font-size: toRem(12);
+					line-height: toRem(20); 
+					margin-top:toRem(14) ;
+				}
+				.vi-button{
+					background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+					padding: toRem(18) toRem(38);
+					@include Button_1;
+					color: #fff;
+				}
+			}
+
+		}
+		
+	}
+	
+}
+
+@media (min-width:320px) and (max-width:429px) {
+
+	.vi-ourpricing {
+		overflow: hidden;
+		.vi-graphics{
+			
+			
+			&__shining-mobile{
+		
+				display: none;
+			}
+		}
+		.vi-benefits {
+			&__item:nth-child(2){
+				.vi-price{
+					left: 0;
+	
+				}
+			}
+			
+		}
+
+	}	
+}
+
+@media (min-width:430px) and (max-width:500px){
+	.vi-ourpricing {
+		
+		.vi-graphics{
+			
+			
+			&__shining-mobile{
+		
+				top: toRem(800);
+			}
+		}
+	
+	
+	
+		
+	}
+}
+
+@media (min-width:500px) and (max-width:600px){
+	.vi-ourpricing {
+		
+		.vi-graphics{
+			
+			
+			&__shining-mobile{
+		
+				top: toRem(600);
+			}
+		}
+	
+	
+	
+		
+	}
+}
+
+@media (min-width:600px) and (max-width:769px){
+	.vi-ourpricing {
+		
+		.vi-graphics{
+			
+			
+			&__shining-mobile{
+		
+				top: toRem(500);
+			}
+		}
+	
+	
+	
+		
+	}
+}

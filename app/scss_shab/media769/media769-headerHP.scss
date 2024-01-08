@@ -1,0 +1,71 @@
+
+
+
+body {
+	font-size: toRem(14);
+	font-style: normal;
+	font-weight: 400;
+	line-height: toRem(28);
+}
+
+.vi-wrapper {
+	padding: 0 toRem(16);
+	position: relative;
+	&__container{
+		position: relative;
+    	overflow: hidden;
+		margin-top: -310px;
+	}
+
+	.vi-headcontainer {
+		padding: toRem(42) 0;
+	}
+	
+	&__desktopbg{
+		display: none;
+
+	}
+	&__mobilebg{
+		display: block;
+
+	}
+	&__deskt-top-bg{
+		display: none;
+
+	}
+	&__mob-bg{
+		display: block;
+
+	}
+}
+
+.vi-headers {
+	&__hamburger{
+		display: block;
+		padding: toRem(8) toRem(8);
+		border: 1px solid transparent;
+		border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+		border-image-slice: 1;
+
+	}
+	&__contactbutton{
+		display: none;
+	}
+}
+
+.vi-menu {
+	display: none;
+	
+	}
+	
+	
+	
+
+
+
+
+
+
+
+
+

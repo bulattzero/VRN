@@ -1,0 +1,52 @@
+:root,
+html {
+	font-size: 14px;
+}
+
+/* MIXINS*/
+
+@import"../scss_shab/mixins.scss";
+
+@function toRem($value) {
+	$remValue: calc($value / 14) + rem; 
+	@return $remValue;
+}
+
+/* HEADER*/
+@import"../scss_shab/media993/media993-headerHP.scss";
+/*TOP*/
+
+@import"../scss_shab/media993/media993-topHP.scss";
+
+/*Aboutus*/
+@import"../scss_shab/media993/media993-aboutusHP.scss";
+/*Ourservice*/
+
+@import"../scss_shab/media993/media993-ourserviceHP.scss";
+/*Whychooseus*/
+
+@import"../scss_shab/media993/media993-whychooseusHP.scss";
+/*Getstarted*/
+
+@import"../scss_shab/media993/media993-getstartedHP.scss";
+/*Testimonial*/
+
+@import"../scss_shab/media993/media993-testimonialHP.scss";
+
+/*Ourpricing*/
+
+@import"../scss_shab/media993/media993-ourpricingHP.scss";
+
+/*Ourpartner*/
+
+@import"../scss_shab/media993/media993-ourpartnersHP.scss";
+
+/*Ourarticles*/
+
+@import"../scss_shab/media993/media993-ourarticlesHP.scss";
+
+/* FOOTER*/
+@import"../scss_shab/media993/media993-footerHP.scss";
+
+
+

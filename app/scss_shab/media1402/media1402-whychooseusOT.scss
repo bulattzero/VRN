@@ -1,0 +1,35 @@
+@import"../scss_shab/media1402/media1402-whychooseusHP.scss";
+
+.vi-whychooseus{
+	&__inner{
+		flex-direction: row-reverse;
+		gap: 125px;
+
+	}
+	.vi-whychooseus__item:nth-child(1) {
+		
+		width: 50%;
+	}
+	.vi-whychooseus__item:nth-child(2) {
+		
+		width: 50%;
+	}
+	&__pic{
+		right: unset;
+	}
+	&__video {
+		right: toRem(25);
+		bottom: - toRem(50);
+	}
+	.vi-graphics{
+		&__background {
+			right: unset;
+			top: 26px;
+		}
+		&__shining-desktop{
+			right: unset;
+		}
+
+	}
+	
+}

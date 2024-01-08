@@ -1,0 +1,51 @@
+.vi-navigation {
+	border-bottom: 1px solid rgba(0,0,0,0);
+    border-image: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+    border-image-slice: 1;
+
+	.vi-graphics {
+		position: relative;
+
+		&__shining-desktop {
+			width: 147px;
+			height: 449px;
+			background: linear-gradient(135deg, #1CC4F9 0%, #FE69FE 100%);
+			position: absolute;
+			left: 50%;
+    		transform: translate(-50%, -50%) rotate(-90deg);
+
+		}
+		&__shining-mobile {
+			width: 98px;
+			height: 299px;
+			background: linear-gradient(135deg, #1CC4F9 0%, #FE69FE 100%);
+			position: absolute;
+    		left: 50%;
+    		transform: translate(-50%, -50%) rotate(-90deg);
+		}
+	}
+}
+
+
+
+.vi-navigation-box {
+	position: relative;
+	width: fit-content;
+    margin: 0 auto;
+	&__tittle {
+		color: #FFF;
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		width: fit-content;
+		margin: 0 auto;
+	}
+	&__item:nth-child(1){
+		color: #FFF;
+	}
+
+	&__item:nth-child(3){
+		color: #D1D1D1;
+	}
+}

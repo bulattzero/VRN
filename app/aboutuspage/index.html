@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+	{% set title="VRNas About us" %}
+	{% set keywords="Virtual Reality, Virtual Stuff, Virtual Games" %}
+	{% set description="Virtual Reality" %}
+	{% set script1="../js/jquery-3.4.1.min.js" %}
+	{% set script2="../js/lazyload.min.js" %}
+	{% set script3="../js/slick.min.js" %}
+	{% set script4="../js/script.js" %}
+	{% include 'head.html' %}
+	
+<body>
+	<div class="vi-wrapper">
+		<div class="vi-wrapper__background">
+			<div class="vi-wrapper__desktopbg">
+				<img class="lazy" data-src="@img/Uptucha.jpg" alt="Uptucha" width="736" height="353" />
+			</div>
+			<div class="vi-wrapper__mobilebg">
+				<img class="lazy" data-src="@img/Uptucha_mob.jpg" alt="Uptucha" width="430" height="206" />
+			</div>
+		</div>
+		<!-- Section Header begin -->
+		{%set optionalClass2="vi-menu__item--current" %}
+		{% include 'header.html' %}
+	</div>
+	<!-- Header end -->
+	<main>
+		<!-- Section Navigation begin -->
+		<div class="vi-wrapper">
+			{% set tittleTxT="About us" %}
+			{% set Link1="/" %}
+			{% set tittleLink1="Home" %}
+			{% set Link2="/aboutuspage/" %}
+			{% set tittleLink2="About us" %}
+			{% include 'vr-navigationOT.html' %}
+		</div>
+		<!-- Navigation end -->
+		<!-- Section Aboutus begin -->
+		<div class="vi-wrapper">
+			{% set adress__file1="@img/man_turn_left2.jpg" %}
+			{% set alt__file1="man_turn_left2" %}
+			{% set width_file1="399" %}
+			{% set height_file1="574" %}
+
+			{% set adress__file2="@img/boy_video2.jpg" %}
+			{% set alt__file2="Happy_Client" %}
+			{% set width_file2="125" %}
+			{% set height_file2="124" %}
+
+			{% set adress__file3="@img/man_turn_left2_mob.jpg" %}
+			{% set alt__file3="man_turn_left2_mob" %}
+			{% set width_file3="316" %}
+			{% set height_file3="454" %}
+
+			{% set adress__file4="@img/boy_video2_mob.jpg" %}
+			{% set alt__file4="boy_video2_mob" %}
+			{% set width_file4="98" %}
+			{% set height_file4="98" %}
+
+			{% set Slogan_tittle="Bringing Your Vision to Life: Learn About VRNas" %}
+			{% set Slogan__description1="VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light."%}
+			{% set Slogan__description2="Our team consists of experienced VR developers, designers, and technicians who are passionate about VR and dedicated to delivering the highest quality work. We use the latest VR hardware and software to create immersive, interactive experiences that are tailored to your specific needs." %}
+			{% set Slogan__description3="From initial consultation to final delivery, we are committed to providing exceptional customer service. Our goal is to ensure that you are completely satisfied with every aspect of your VR experience." %}
+		
+			{% include 'vr-aboutusHP.html' %}
+		</div>
+		<!-- Aboutus end -->
+		<!-- Section Ourservice begin -->
+		<div class="vi-wrapper">
+			{% set Slogan__subtitle="WHY CHOOSE US" %}
+			{% set Slogan_tittle="Empowering Your Virtual Reality Experience" %}
+			{% include 'vr-topHP.html' %}
+		</div>
+		<!-- Ourservice end -->
+		<!-- Section Whychooseus begin -->
+		
+			<div class="vi-wrapper">
+				{% set adress__file1="@img/man_right.jpg" %}
+				{% set alt1="man_right" %}
+				{% set width1="500" %}
+				{% set height1="574" %}
+	
+				{% set adress__file2="@img/glases_video.jpg" %}
+				{% set alt2="glases_video2" %}
+				{% set width2="130" %}
+				{% set height2="88" %}
+
+			
+	
+				{% set adress__file3="@img/man_rightmobile.jpg" %}
+				{% set alt3="man_look_right2mobile" %}
+				{% set width3="408" %}
+				{% set height3="468" %}
+	
+				{% set adress__file4="@img/glases_videomobile.jpg" %}
+				{% set alt4="glases_videomobile" %}
+				{% set width4="98" %}
+				{% set height4="68" %}
+	
+				
+	
+				{% include 'vr-whychooseusHP.html' %}
+			</div>
+	
+		<!-- Whychooseus end -->
+		
+		<!-- Section Ourteam begin -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-ourteamAP.html' %}
+		</div>
+		<!-- Section Ourteam end -->
+		<!-- Section Ourpartner begin -->
+		<div class="vi-wrapper">
+			
+			{% include 'vr-ourpartnersHP.html' %}
+		</div>
+		<!-- Section Ourpartner end -->
+		<!-- Section Faq begin -->
+		<div class="vi-wrapper">
+			{% include 'vr-faqAP.html'%}
+		</div>
+		<!-- Section Faq end -->
+	</main>
+	<!-- <div class="vi-wrapper">
+	
+		<!-- Section footer begin -->
+		{% include 'footer.html' %}
+		
+		<div class="vi-wrapper__background-footer">
+			<div class="vi-wrapper__container">
+					<div class="vi-wrapper__deskt-top-bg">
+						<img class="lazy" data-src="@img/Uptucha2.jpg" alt="Uptucha2" width="1011" height="498" >
+					</div>
+					<div class="vi-wrapper__mob-bg">
+						<img class="lazy" data-src="@img/Uptucha2__mob.jpg" alt="Uptucha2" width="637" height="314" >
+					</div>
+			</div>
+		</div>
+	</div> -->
+</body>
+</html>
