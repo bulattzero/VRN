@@ -15,6 +15,7 @@
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^5.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.3.0",

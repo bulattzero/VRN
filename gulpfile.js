@@ -45,26 +45,26 @@ const beautify = require('gulp-html-beautify');
 
 
 // Нужно для работы:конвертации и записывании шрифтов в файл fonts.scss-и только для этой опции
-const path ={
-	build:{
-		files: `${buildfolder}/files/`,
-		fonts: `${buildfolder}/fonts`,
-	},
-	src:{
-		files: `${srcFolder}/files/**/*.*`,
-	},
+// const path ={
+// 	build:{
+// 		files: `${buildfolder}/files/`,
+// 		fonts: `${buildfolder}/fonts`,
+// 	},
+// 	src:{
+// 		files: `${srcFolder}/files/**/*.*`,
+// 	},
 	
-	// clean: buildfolder,
-	buildfolder: buildfolder,
-	srcFolder : srcFolder,
-	rootFolder: rootFolder,
-	ftp: ``
+// 	// clean: buildfolder,
+// 	buildfolder: buildfolder,
+// 	srcFolder : srcFolder,
+// 	rootFolder: rootFolder,
+// 	ftp: ``
 
-}
-// app.path.build.fonts
-global.app ={
-	path:path,
-}
+// }
+// // app.path.build.fonts
+// global.app ={
+// 	path:path,
+// }
 
  function fontsStyle (){
 	let fontsFile ='app/scss_shab/fonts.scss'
@@ -156,6 +156,7 @@ async function copyjs(){
 	return src(
 		'app/js/**.js'
 	)
+	.pipe(newer('app/src/js/'))
 	.pipe(dest('app/src/js/'))
 }
 
@@ -165,6 +166,7 @@ async function copyimg(done){
 		'app/img/*.ico',
 	]
 	)
+	.pipe(newer('app/src/img/'))
 	.pipe(dest('app/src/img/'))
 	done();
 }
@@ -187,6 +189,7 @@ async function copyimg(done){
 		'app/homepage/media1401.scss',
 		'app/homepage/media1402.scss',
 	])
+	.pipe(newer('app/src/*.css'))
 	.pipe(sourcemaps.init())
 	//.pipe(pxToRem())
 	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
@@ -207,6 +210,7 @@ async function copyimg(done){
 		'app/aboutuspage/media1401.scss',
 		'app/aboutuspage/media1402.scss',
 	])
+	.pipe(newer('app/src/aboutuspage/*.css'))
 	.pipe(sourcemaps.init())
 	//.pipe(pxToRem())
 	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
@@ -224,6 +228,7 @@ async function stylessecondpage () {
 		'app/ourservicepage/media1401.scss',
 		'app/ourservicepage/media1402.scss',
 	])
+	.pipe(newer('app/src/ourservicepage/*.css'))
 	.pipe(sourcemaps.init())
 	//.pipe(pxToRem())
 	.pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
@@ -255,7 +260,7 @@ async function watching(){
 	// watch (['], series (cleanDist,construct,transfer,copyimg, copyjs,)) ;
 	// watch (['dist/**/*.html','dist/*.html','dist/**/**/*.html','dist/**/**/**/*.html','dist/**/**/**/**/*.html','dist/**/**/**/**/**/*.html','dist/**/**/**/**/**/**/*.html'] ).on('change',browserSync.reload);
 	// watch (['app/**/html/*.html'], series (cleanDist, construct, copyjs,transfer)) ;//backupfonts
-	// watch (['app/src/*.html','app/src/**/*.html']) .on('change', browserSync.reload);
+	watch (['app/src/*.html','app/src/**/*.html']) .on('change', browserSync.reload);
 }
 
 // Функция очистки папки назначения
@@ -348,6 +353,8 @@ function cleanDist(){
     //   prefix: '@@',
     //   basepath: '@file',
     // }))
+
+	.pipe(newer('app/homepage/*.html'))
 	.pipe(nunjucksRender({
 		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
 	  }))
@@ -398,6 +405,7 @@ function cleanDist(){
     //   prefix: '@@',
     //   basepath: '@file'
     // }))
+	.pipe(newer('app/aboutuspage/*.html'))
 	.pipe(nunjucksRender({
 		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
 	  }))
@@ -446,6 +454,7 @@ function htmlsecondpage(){
     //   prefix: '@@',
     //   basepath: '@file'
     // }))
+	.pipe(newer('app/ourservicepage/*.html'))
 	.pipe(nunjucksRender({
 		path: ['app/html'] // Шлях до папки з шаблонами Nunjucks
 	  }))
